@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="71151cdb-565c-4f07-bf02-4ea3707c41e9"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_signUp_pop_up"
+	namespace="MakeMyTrip.HomePage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="21;16"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="12596494-54ad-4049-a088-50e9cd712255"
+		sx="1437"
+		sy="345"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="992c351e-915d-4052-891c-91b24a9044d7"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="1416,329,25,25"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						commonModal__close
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						commonModal__close
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-cy"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//div[#'SW']/div[1]/div[2]/div[2]/?/?/section/span
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="3e59044a-3d08-4277-b36f-ec189ba84416">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACWAJYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCvRRRQ
+AUUZGRyOelFABRRQTgZJxQAUUUUAFFFJuG3dkY9c0ALRSKyt91gfoaWgAooooAKKKCQASSAB1oAK
+KKRmVfvMB9TQAtFAYHoQfpRQBCrsAjM2dw546cUbmO5SW+7nJxU20ccDjpSBFX7qgfQUAR5KhD97
+5SeRQWZcfNu3KT06VIFVeigfQUBFGcKBnrxQBGHZdpZ+GUnkdKazMVdTnoDzjP6VPtHoPSkCKBgK
+APpQAkhIwATk+mM/rTEZnKjcRlSeAPWpWVW+8AfqKAoHQAUAQq7OBltuFycDrR/y6L9BUpRTjKjj
+px0pdo27cDHpigBkv3kx97dx9O9NDthW3Z3HG2pFRV+6oH0FG1Q24KM+uKAIlZzs+c/MSOg4oDud
+o578jGTg+9TbRxwOOlIUUjBUEemKAI9zjBbIHfGP1pMEJKck89CBUuxMg7VyOnFG1ck7Rk9eKAGg
+lnb5sBTjFI27zxtAPy9zinlVJyVBPrilwM5xzQAwZ87nrtFFPwM570UALRSc0c0ALRSc0c0ALRSc
+0c0ALRSc0c0ALRSc0c0ALRSc0c0ALRSc0c0ALRSc0c0ALRSc0c0ALRSc0UALRTvJucf8ek/XGPLN
+HkXOcfZJ/rsNADaKV7a6yoFvMATyRGf8KcLa6C828pP/AFzNADKKBa3hXcYZlPXHlnA/So9zKWDK
+2Q2MYoAkoqPzQcYUkntQZBkgAnHFJu2pUYub5USUUzcx6IakMVwF3fZ5APXacUudGv1ep/TQlFM3
+n+4aVW3Z4xihST0JlRnFczX4odRRRVGQUUUUAFFFFABRRRQB1dFFFABRRRQAVT1KyS7t2+UeYoyp
+x+hq5RQBxwi/dhcrjnqtOKnevfJwOOacvSnwkC7gLdBIM/mKmexvh/4n3/kblvbxafatNKMuq7nY
+DJHsKsfa7f7J9q81fJxu30+aRIYmklYKijLE+lc39nk3/b/szf2f5m/7PnnGPv7f1xVGBqXttFd2
+gu4FwxXf0xuH0rET7zfWum+22hRCbiICRcqCwBYH2rmU+831qXujen/Dn8vzH0UUVRgFFFFABRRR
+QAUUUUAdXRRRQAUUUUAFFFFAHJL0pH+8v1qOOYMSqqxwcHjpUrLuxzjFTJXWhrRkozTl5/kbtjqE
+c0QinYB8Yy3RqvllC5JAX1zxXJbD/fNNcFRkyEDIycZwM8mi77D9nT/n/BmvfGO5+0rb7WIWBF9M
++Yf8ay2jnhLGWFtpLcod2ApwxPtWxpmnvC83nMssb+W0bqfvYJI/pVm/gjSwuXUYIhlxz/e5P6iq
+33M7uN0nozAooooJCiiigAooooAKKKKAOropM0tABRRRQAUUUUAcbbAgPkEZcmp6avSnUAFFFFAF
+vTtRNkPJmDPATlSoyU9selS6lqq3Nu1vbK+H4d2G3A74z1rPooAKKKKACiiigAooooAKKKKAOqKj
+txSAkHBp1IwyKAFopqHIp1ABRRRQByKHnGD069qfVYKxToc7BTny5YhWwQvbHegCems+0gYJJ6Yq
+Fo8eZtXpjbgfyp8udyH5hg9QM0ASAkjkEfWlqFudpYMyjOcr/SkIXJ3ISMfKNvT/AAoAnoqDyySd
+65OwdfWkxwd6kkqNvGe36UAWKKrshIckEsAMH39qVk2liowFAI9M0AT0UyMfLuPVuTT6ACiiigDq
+6KKKAGD75p9RryxNSUAFFFFAHJL0p1NXpTqACiiigAooooAKKKKACkIBGCMilooAKKKKACiiigDq
+6ZI2Bgd6KKAFQYFOoooAKKKKAOSXpTqKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
+	name="MakeMyTripRepository"
+	relativepath="..\MakeMyTripRepository.rxrep">
+		<codegen
+		classname="MakeMyTripRepository"
+		namespace="MakeMyTrip">
+		</codegen>
+		<rootfolder
+		id="fd994926-984c-4c0e-b481-b5d0ff6b74ed"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_signUp_pop_up.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

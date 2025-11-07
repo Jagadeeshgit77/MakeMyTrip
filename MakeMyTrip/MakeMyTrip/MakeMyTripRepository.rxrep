@@ -1,0 +1,209 @@
+﻿<repository
+id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
+name="MakeMyTripRepository">
+	<codegen
+	classname="MakeMyTripRepository"
+	namespace="MakeMyTrip">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="fd994926-984c-4c0e-b481-b5d0ff6b74ed"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="2e48572a-9551-466b-8365-b7c5135cb9ef"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		refimgid="f8cf0ac3-b307-496f-978d-e3c82025a257"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="f7df8194-6da8-4f92-9d71-d6ea83d60a94"
+			name="FromCity"
+			refimgid="b574e497-eac3-4423-bcc9-97beab06f3d8"
+			refpath="/dom[@domain='www.makemytrip.com']//input[#'fromCity']"
+			robustPath="/dom[@domain='www.makemytrip.com']//input[#'fromCity']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//input[#'fromCity']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="861ef694-15f1-48d2-b18f-4bcdcdb58b6b"
+			name="Hyderabad"
+			refimgid="dd7f2af8-72e5-44ec-bda7-e257a6c8a2cc"
+			refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/div/div/ul/li[1]/div/div/p[1]/span[1]/span[@innertext='Hyderabad']"
+			robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']//span[@innertext='Hyderabad']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/div/?/?/ul/li[1]/div/div/p[1]/?/?/span[@innertext='Hyderabad']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="7d3b0f52-4c6a-468f-a067-38013151d245"
+			name="AppendTop12ForHideundefinedMakeFlex"
+			refimgid="89515416-c516-42df-ba92-6dad60128140"
+			refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/div/div/ul/li[1]/div"
+			robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/div/div/ul/li[1]/div"
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]//ul/li[1]/div
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="fb7cdfb7-21c1-49a7-bd18-12bd8fa7b39b"
+			name="ToCity"
+			refimgid="84252cf9-87fd-426d-96f8-0744ce022f10"
+			refpath="/dom[@domain='www.makemytrip.com']//input[#'toCity']"
+			robustPath="/dom[@domain='www.makemytrip.com']//input[#'toCity']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//input[#'toCity']
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="6c282f16-b0ae-47a1-b2e6-931c87f3bb0d"
+			isrooted="True"
+			name="FswInnerReturnPersuasion"
+			refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="18840fbd-303f-4a9a-a594-97320d6574f7"
+				name="From"
+				refimgid="ab85caff-d1e2-49b9-99f9-949cb172fd70"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/label/span[@innertext='From']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']//span[@innertext='From']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/?/?/span[@innertext='From']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="9cf67a6d-22a8-414e-805f-68490d680e63"
+				name="Text"
+				refimgid="3d4ac6c9-7bbb-4c88-908e-26b5f146e791"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/input[@type='text']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/input[@type='text']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]//input[@type='text']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="5015ee32-90e3-4858-9585-7876cc7375de"
+				name="SpanTagTo"
+				refimgid="6b5c05e5-d43c-4d08-a13f-6fa21e5efb96"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/label/span[@innertext='To']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']//span[@innertext='To']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/?/?/span[@innertext='To']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="d518b3a7-e01a-4d28-bbca-c3808f51b2af"
+				name="Text1"
+				refimgid="82ae371a-f0b3-4195-b73b-2ac139bc63db"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/input[@type='text']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/input[@type='text']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[1]//input[@type='text']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="1a8a91fa-f5d7-45b7-876a-e8fbace38ba9"
+				name="AppendTop12ForHideundefinedMakeFlex1"
+				refimgid="2d02eee2-7221-4593-ac88-26e389076bf8"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[1]/div"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[1]/div"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[1]//ul/li[1]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="28f15162-5b2f-44f3-ba53-4ba8d40a85aa"
+				name="Pune"
+				refimgid="ddcfd734-61cc-4839-9e1c-4f8484de63f5"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[1]/div/div/p[1]/span[1]/span[@innertext='Pune']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']//span[@innertext='Pune']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div[1]//ul/li[1]/div/div/p[1]/?/?/span[@innertext='Pune']
+				</item>
+				<basepath>
+					/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain='www.makemytrip.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="a703aa26-0538-409f-93ac-69f4f4372afd"
+		isrooted="True"
+		name="MakeMyTrip"
+		refpath="/dom[@domain='www.makemytrip.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="992c351e-915d-4052-891c-91b24a9044d7"
+			name="Btn_CloseSignUp"
+			refimgid="f408786d-d555-43e8-bf5c-3fcc5ed35972"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//?/?/?/?/?/?/?/span[@class='commonModal__close']
+			</item>
+			<basepath>
+				/dom[@domain='www.makemytrip.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
