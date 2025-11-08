@@ -49,6 +49,18 @@ namespace MakeMyTrip
 
 #region Variables
 
+        string _date = "Sat Nov 08 202";
+
+        /// <summary>
+        /// Gets or sets the value of variable date.
+        /// </summary>
+        [TestVariable("a6e15f58-6f46-4bb7-b7e0-5de8b65baa27")]
+        public string date
+        {
+            get { return _date; }
+            set { _date = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -89,6 +101,7 @@ namespace MakeMyTrip
             RepoItemInfo _fromcityInfo;
             RepoItemInfo _tocityInfo;
             RepoItemInfo _btn_closesignupInfo;
+            RepoItemInfo _currentdateInfo;
 
             /// <summary>
             /// Creates a new MakeMyTrip  folder.
@@ -100,6 +113,7 @@ namespace MakeMyTrip
                 _fromcityInfo = new RepoItemInfo(this, "FromCity", ".//input[#'fromCity']", ".//input[#'fromCity']", 30000, null, "f7df8194-6da8-4f92-9d71-d6ea83d60a94");
                 _tocityInfo = new RepoItemInfo(this, "ToCity", ".//input[#'toCity']", ".//input[#'toCity']", 30000, null, "fb7cdfb7-21c1-49a7-bd18-12bd8fa7b39b");
                 _btn_closesignupInfo = new RepoItemInfo(this, "Btn_CloseSignUp", ".//?//span[@class='commonModal__close']", "", 30000, null, "992c351e-915d-4052-891c-91b24a9044d7");
+                _currentdateInfo = new RepoItemInfo(this, "CurrentDate", ".//?//div[@aria-label=$date]", "", 30000, null, "706c38c0-90e8-4353-90cc-03e46ea9a924");
             }
 
             /// <summary>
@@ -199,6 +213,30 @@ namespace MakeMyTrip
             }
 
             /// <summary>
+            /// The CurrentDate item.
+            /// </summary>
+            [RepositoryItem("706c38c0-90e8-4353-90cc-03e46ea9a924")]
+            public virtual Ranorex.DivTag CurrentDate
+            {
+                get
+                {
+                    return _currentdateInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CurrentDate item info.
+            /// </summary>
+            [RepositoryItemInfo("706c38c0-90e8-4353-90cc-03e46ea9a924")]
+            public virtual RepoItemInfo CurrentDateInfo
+            {
+                get
+                {
+                    return _currentdateInfo;
+                }
+            }
+
+            /// <summary>
             /// The OneWayJourney folder.
             /// </summary>
             [RepositoryFolder("6c282f16-b0ae-47a1-b2e6-931c87f3bb0d")]
@@ -219,6 +257,9 @@ namespace MakeMyTrip
             RepoItemInfo _btn_toInfo;
             RepoItemInfo _puneInfo;
             RepoItemInfo _hyderabadInfo;
+            RepoItemInfo _dateinnercellInfo;
+            RepoItemInfo _spantag8Info;
+            RepoItemInfo _dateinnercell1Info;
 
             /// <summary>
             /// Creates a new OneWayJourney  folder.
@@ -231,6 +272,9 @@ namespace MakeMyTrip
                 _btn_toInfo = new RepoItemInfo(this, "Btn_To", ".//?//span[@innertext='To']", "", 30000, null, "5015ee32-90e3-4858-9585-7876cc7375de");
                 _puneInfo = new RepoItemInfo(this, "Pune", ".//span[@innertext='Pune']", "", 30000, null, "28f15162-5b2f-44f3-ba53-4ba8d40a85aa");
                 _hyderabadInfo = new RepoItemInfo(this, "Hyderabad", ".//span[@innertext='Hyderabad']", "", 30000, null, "861ef694-15f1-48d2-b18f-4bcdcdb58b6b");
+                _dateinnercellInfo = new RepoItemInfo(this, "DateInnerCell", ".//?//div[@class='dateInnerCell']", "", 30000, null, "915ee245-07a3-4b30-8b26-25f0e53a539c");
+                _spantag8Info = new RepoItemInfo(this, "SpanTag8", "div[3]/label/p[1]/span[@innertext='8']", "", 30000, null, "c618256d-efc0-4dae-979a-ac52f7c75554");
+                _dateinnercell1Info = new RepoItemInfo(this, "DateInnerCell1", ".//?//div[@aria-label='Sat Nov08 2025']", "div[2]/div/div/div/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[2]/div[7]", 30000, null, "78b18a5b-01bc-4cf5-ba18-8d04784079c7");
             }
 
             /// <summary>
@@ -374,6 +418,78 @@ namespace MakeMyTrip
                 get
                 {
                     return _hyderabadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateInnerCell item.
+            /// </summary>
+            [RepositoryItem("915ee245-07a3-4b30-8b26-25f0e53a539c")]
+            public virtual Ranorex.DivTag DateInnerCell
+            {
+                get
+                {
+                    return _dateinnercellInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateInnerCell item info.
+            /// </summary>
+            [RepositoryItemInfo("915ee245-07a3-4b30-8b26-25f0e53a539c")]
+            public virtual RepoItemInfo DateInnerCellInfo
+            {
+                get
+                {
+                    return _dateinnercellInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SpanTag8 item.
+            /// </summary>
+            [RepositoryItem("c618256d-efc0-4dae-979a-ac52f7c75554")]
+            public virtual Ranorex.SpanTag SpanTag8
+            {
+                get
+                {
+                    return _spantag8Info.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SpanTag8 item info.
+            /// </summary>
+            [RepositoryItemInfo("c618256d-efc0-4dae-979a-ac52f7c75554")]
+            public virtual RepoItemInfo SpanTag8Info
+            {
+                get
+                {
+                    return _spantag8Info;
+                }
+            }
+
+            /// <summary>
+            /// The DateInnerCell1 item.
+            /// </summary>
+            [RepositoryItem("78b18a5b-01bc-4cf5-ba18-8d04784079c7")]
+            public virtual Ranorex.DivTag DateInnerCell1
+            {
+                get
+                {
+                    return _dateinnercell1Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateInnerCell1 item info.
+            /// </summary>
+            [RepositoryItemInfo("78b18a5b-01bc-4cf5-ba18-8d04784079c7")]
+            public virtual RepoItemInfo DateInnerCell1Info
+            {
+                get
+                {
+                    return _dateinnercell1Info;
                 }
             }
         }

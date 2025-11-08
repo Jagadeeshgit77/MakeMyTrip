@@ -53,6 +53,16 @@ name="MakeMyTripRepository">
 			searchtimeout="30000ms">
 				/dom[@domain='www.makemytrip.com']//?//span[@class='commonModal__close']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="706c38c0-90e8-4353-90cc-03e46ea9a924"
+			name="CurrentDate"
+			refimgid="44a4ef4b-19de-4817-a951-31ea9ed5fb73"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//?//div[@aria-label=$date]
+			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
@@ -111,6 +121,37 @@ name="MakeMyTripRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']//span[@innertext='Hyderabad']
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="915ee245-07a3-4b30-8b26-25f0e53a539c"
+				name="DateInnerCell"
+				refimgid="3a2b502b-6370-4547-883b-377d26bcde91"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']//?//div[@class='dateInnerCell']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="c618256d-efc0-4dae-979a-ac52f7c75554"
+				name="SpanTag8"
+				refimgid="e2560e1d-0f5e-4c69-bf58-b9eb6e8dfd6e"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[3]/label/p[1]/span[@innertext='8']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']/div[3]/label/p[1]/span[@innertext='8']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="78b18a5b-01bc-4cf5-ba18-8d04784079c7"
+				name="DateInnerCell1"
+				refimgid="4add7149-c6b5-42d4-ae98-cf7a030e75a3"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[2]/div[7]"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']//?//div[@aria-label='Sat Nov08 2025']
+				</item>
 				<basepath>
 					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']
 				</basepath>
@@ -138,5 +179,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="a6e15f58-6f46-4bb7-b7e0-5de8b65baa27"
+		name="date">
+			Sat Nov 08 202
+		</var>
 	</variables>
 </repository>
