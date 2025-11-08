@@ -83,6 +83,9 @@ namespace MakeMyTrip
             Host.Current.OpenBrowser("https://www.makemytrip.com/", "EdgeChromium", "", false, false, false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(1));
+            Delay.Duration(300, false);
+            
         }
 
 #region Image Feature Data

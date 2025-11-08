@@ -55,6 +55,7 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="50b0faf6-182b-43dd-a5db-31e49e53eb1e"
 			name="CloseBrowser"
 			ref="26a78c26-30f6-436c-a080-ad27b19844ec"

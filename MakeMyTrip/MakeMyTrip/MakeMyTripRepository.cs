@@ -27,7 +27,6 @@ namespace MakeMyTrip
     public partial class MakeMyTripRepository : RepoGenBaseFolder
     {
         static MakeMyTripRepository instance = new MakeMyTripRepository();
-        MakeMyTripRepositoryFolders.ApplicationUnderTestAppFolder _applicationundertest;
         MakeMyTripRepositoryFolders.MakeMyTripAppFolder _makemytrip;
 
         /// <summary>
@@ -45,7 +44,6 @@ namespace MakeMyTrip
         public MakeMyTripRepository() 
             : base("MakeMyTripRepository", "/", null, 0, false, "fd994926-984c-4c0e-b481-b5d0ff6b74ed", ".\\RepositoryImages\\MakeMyTripRepositoryfd994926.rximgres")
         {
-            _applicationundertest = new MakeMyTripRepositoryFolders.ApplicationUnderTestAppFolder(this);
             _makemytrip = new MakeMyTripRepositoryFolders.MakeMyTripAppFolder(this);
         }
 
@@ -66,18 +64,9 @@ namespace MakeMyTrip
         }
 
         /// <summary>
-        /// The ApplicationUnderTest folder.
-        /// </summary>
-        [RepositoryFolder("2e48572a-9551-466b-8365-b7c5135cb9ef")]
-        public virtual MakeMyTripRepositoryFolders.ApplicationUnderTestAppFolder ApplicationUnderTest
-        {
-            get { return _applicationundertest; }
-        }
-
-        /// <summary>
         /// The MakeMyTrip folder.
         /// </summary>
-        [RepositoryFolder("a703aa26-0538-409f-93ac-69f4f4372afd")]
+        [RepositoryFolder("2e48572a-9551-466b-8365-b7c5135cb9ef")]
         public virtual MakeMyTripRepositoryFolders.MakeMyTripAppFolder MakeMyTrip
         {
             get { return _makemytrip; }
@@ -91,28 +80,26 @@ namespace MakeMyTrip
     public partial class MakeMyTripRepositoryFolders
     {
         /// <summary>
-        /// The ApplicationUnderTestAppFolder folder.
+        /// The MakeMyTripAppFolder folder.
         /// </summary>
         [RepositoryFolder("2e48572a-9551-466b-8365-b7c5135cb9ef")]
-        public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
+        public partial class MakeMyTripAppFolder : RepoGenBaseFolder
         {
-            MakeMyTripRepositoryFolders.FswInnerReturnPersuasionFolder _fswinnerreturnpersuasion;
+            MakeMyTripRepositoryFolders.OneWayJourneyFolder _onewayjourney;
             RepoItemInfo _fromcityInfo;
-            RepoItemInfo _hyderabadInfo;
-            RepoItemInfo _appendtop12forhideundefinedmakeflexInfo;
             RepoItemInfo _tocityInfo;
+            RepoItemInfo _btn_closesignupInfo;
 
             /// <summary>
-            /// Creates a new ApplicationUnderTest  folder.
+            /// Creates a new MakeMyTrip  folder.
             /// </summary>
-            public ApplicationUnderTestAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ApplicationUnderTest", "/dom[@domain='www.makemytrip.com']", parentFolder, 30000, null, false, "2e48572a-9551-466b-8365-b7c5135cb9ef", "")
+            public MakeMyTripAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("MakeMyTrip", "/dom[@domain='www.makemytrip.com']", parentFolder, 30000, null, false, "2e48572a-9551-466b-8365-b7c5135cb9ef", "")
             {
-                _fswinnerreturnpersuasion = new MakeMyTripRepositoryFolders.FswInnerReturnPersuasionFolder(this);
+                _onewayjourney = new MakeMyTripRepositoryFolders.OneWayJourneyFolder(this);
                 _fromcityInfo = new RepoItemInfo(this, "FromCity", ".//input[#'fromCity']", ".//input[#'fromCity']", 30000, null, "f7df8194-6da8-4f92-9d71-d6ea83d60a94");
-                _hyderabadInfo = new RepoItemInfo(this, "Hyderabad", ".//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/div/?/?/ul/li[1]/div/div/p[1]/?/?/span[@innertext='Hyderabad']", ".//div[#'top-banner']//span[@innertext='Hyderabad']", 30000, null, "861ef694-15f1-48d2-b18f-4bcdcdb58b6b");
-                _appendtop12forhideundefinedmakeflexInfo = new RepoItemInfo(this, "AppendTop12ForHideundefinedMakeFlex", ".//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]//ul/li[1]/div", ".//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[1]/div[1]/div/div/div/div/div/ul/li[1]/div", 30000, null, "7d3b0f52-4c6a-468f-a067-38013151d245");
                 _tocityInfo = new RepoItemInfo(this, "ToCity", ".//input[#'toCity']", ".//input[#'toCity']", 30000, null, "fb7cdfb7-21c1-49a7-bd18-12bd8fa7b39b");
+                _btn_closesignupInfo = new RepoItemInfo(this, "Btn_CloseSignUp", ".//?//span[@class='commonModal__close']", "", 30000, null, "992c351e-915d-4052-891c-91b24a9044d7");
             }
 
             /// <summary>
@@ -164,54 +151,6 @@ namespace MakeMyTrip
             }
 
             /// <summary>
-            /// The Hyderabad item.
-            /// </summary>
-            [RepositoryItem("861ef694-15f1-48d2-b18f-4bcdcdb58b6b")]
-            public virtual Ranorex.SpanTag Hyderabad
-            {
-                get
-                {
-                    return _hyderabadInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Hyderabad item info.
-            /// </summary>
-            [RepositoryItemInfo("861ef694-15f1-48d2-b18f-4bcdcdb58b6b")]
-            public virtual RepoItemInfo HyderabadInfo
-            {
-                get
-                {
-                    return _hyderabadInfo;
-                }
-            }
-
-            /// <summary>
-            /// The AppendTop12ForHideundefinedMakeFlex item.
-            /// </summary>
-            [RepositoryItem("7d3b0f52-4c6a-468f-a067-38013151d245")]
-            public virtual Ranorex.DivTag AppendTop12ForHideundefinedMakeFlex
-            {
-                get
-                {
-                    return _appendtop12forhideundefinedmakeflexInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AppendTop12ForHideundefinedMakeFlex item info.
-            /// </summary>
-            [RepositoryItemInfo("7d3b0f52-4c6a-468f-a067-38013151d245")]
-            public virtual RepoItemInfo AppendTop12ForHideundefinedMakeFlexInfo
-            {
-                get
-                {
-                    return _appendtop12forhideundefinedmakeflexInfo;
-                }
-            }
-
-            /// <summary>
             /// The ToCity item.
             /// </summary>
             [RepositoryItem("fb7cdfb7-21c1-49a7-bd18-12bd8fa7b39b")]
@@ -236,40 +175,62 @@ namespace MakeMyTrip
             }
 
             /// <summary>
-            /// The FswInnerReturnPersuasion folder.
+            /// The Btn_CloseSignUp item.
+            /// </summary>
+            [RepositoryItem("992c351e-915d-4052-891c-91b24a9044d7")]
+            public virtual Ranorex.SpanTag Btn_CloseSignUp
+            {
+                get
+                {
+                    return _btn_closesignupInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Btn_CloseSignUp item info.
+            /// </summary>
+            [RepositoryItemInfo("992c351e-915d-4052-891c-91b24a9044d7")]
+            public virtual RepoItemInfo Btn_CloseSignUpInfo
+            {
+                get
+                {
+                    return _btn_closesignupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OneWayJourney folder.
             /// </summary>
             [RepositoryFolder("6c282f16-b0ae-47a1-b2e6-931c87f3bb0d")]
-            public virtual MakeMyTripRepositoryFolders.FswInnerReturnPersuasionFolder FswInnerReturnPersuasion
+            public virtual MakeMyTripRepositoryFolders.OneWayJourneyFolder OneWayJourney
             {
-                get { return _fswinnerreturnpersuasion; }
+                get { return _onewayjourney; }
             }
         }
 
         /// <summary>
-        /// The FswInnerReturnPersuasionFolder folder.
+        /// The OneWayJourneyFolder folder.
         /// </summary>
         [RepositoryFolder("6c282f16-b0ae-47a1-b2e6-931c87f3bb0d")]
-        public partial class FswInnerReturnPersuasionFolder : RepoGenBaseFolder
+        public partial class OneWayJourneyFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _fromInfo;
-            RepoItemInfo _textInfo;
-            RepoItemInfo _spantagtoInfo;
-            RepoItemInfo _text1Info;
-            RepoItemInfo _appendtop12forhideundefinedmakeflex1Info;
+            RepoItemInfo _btn_fromInfo;
+            RepoItemInfo _txtfield_searchInfo;
+            RepoItemInfo _btn_toInfo;
             RepoItemInfo _puneInfo;
+            RepoItemInfo _hyderabadInfo;
 
             /// <summary>
-            /// Creates a new FswInnerReturnPersuasion  folder.
+            /// Creates a new OneWayJourney  folder.
             /// </summary>
-            public FswInnerReturnPersuasionFolder(RepoGenBaseFolder parentFolder) :
-                    base("FswInnerReturnPersuasion", ".//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]", parentFolder, 30000, null, false, "6c282f16-b0ae-47a1-b2e6-931c87f3bb0d", "")
+            public OneWayJourneyFolder(RepoGenBaseFolder parentFolder) :
+                    base("OneWayJourney", ".//div[@class='fsw_inner returnPersuasion']", parentFolder, 30000, null, false, "6c282f16-b0ae-47a1-b2e6-931c87f3bb0d", "")
             {
-                _fromInfo = new RepoItemInfo(this, "From", "div[1]/?/?/span[@innertext='From']", "", 30000, null, "18840fbd-303f-4a9a-a594-97320d6574f7");
-                _textInfo = new RepoItemInfo(this, "Text", "div[1]/div[1]//input[@type='text']", "div[1]/div[1]/div/div/div/input[@type='text']", 30000, null, "9cf67a6d-22a8-414e-805f-68490d680e63");
-                _spantagtoInfo = new RepoItemInfo(this, "SpanTagTo", "div[2]/?/?/span[@innertext='To']", "", 30000, null, "5015ee32-90e3-4858-9585-7876cc7375de");
-                _text1Info = new RepoItemInfo(this, "Text1", "div[2]/div[1]//input[@type='text']", "div[2]/div[1]/div/div/div[1]/input[@type='text']", 30000, null, "d518b3a7-e01a-4d28-bbca-c3808f51b2af");
-                _appendtop12forhideundefinedmakeflex1Info = new RepoItemInfo(this, "AppendTop12ForHideundefinedMakeFlex1", "div[2]/div[1]//ul/li[1]/div", "div[2]/div[1]/div/div/div[1]/div/div/ul/li[1]/div", 30000, null, "1a8a91fa-f5d7-45b7-876a-e8fbace38ba9");
-                _puneInfo = new RepoItemInfo(this, "Pune", "div[2]/div[1]/div/div/div[1]//ul/li[1]/div/div/p[1]/?/?/span[@innertext='Pune']", "", 30000, null, "28f15162-5b2f-44f3-ba53-4ba8d40a85aa");
+                _btn_fromInfo = new RepoItemInfo(this, "Btn_From", ".//?//span[@innertext='From']", "", 30000, null, "18840fbd-303f-4a9a-a594-97320d6574f7");
+                _txtfield_searchInfo = new RepoItemInfo(this, "TxtField_Search", ".//input[@type='text' and @aria-controls='react-autowhatever-1']", "", 30000, null, "9cf67a6d-22a8-414e-805f-68490d680e63");
+                _btn_toInfo = new RepoItemInfo(this, "Btn_To", ".//?//span[@innertext='To']", "", 30000, null, "5015ee32-90e3-4858-9585-7876cc7375de");
+                _puneInfo = new RepoItemInfo(this, "Pune", ".//span[@innertext='Pune']", "", 30000, null, "28f15162-5b2f-44f3-ba53-4ba8d40a85aa");
+                _hyderabadInfo = new RepoItemInfo(this, "Hyderabad", ".//span[@innertext='Hyderabad']", "", 30000, null, "861ef694-15f1-48d2-b18f-4bcdcdb58b6b");
             }
 
             /// <summary>
@@ -297,122 +258,74 @@ namespace MakeMyTrip
             }
 
             /// <summary>
-            /// The From item.
+            /// The Btn_From item.
             /// </summary>
             [RepositoryItem("18840fbd-303f-4a9a-a594-97320d6574f7")]
-            public virtual Ranorex.SpanTag From
+            public virtual Ranorex.SpanTag Btn_From
             {
                 get
                 {
-                    return _fromInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _btn_fromInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The From item info.
+            /// The Btn_From item info.
             /// </summary>
             [RepositoryItemInfo("18840fbd-303f-4a9a-a594-97320d6574f7")]
-            public virtual RepoItemInfo FromInfo
+            public virtual RepoItemInfo Btn_FromInfo
             {
                 get
                 {
-                    return _fromInfo;
+                    return _btn_fromInfo;
                 }
             }
 
             /// <summary>
-            /// The Text item.
+            /// The TxtField_Search item.
             /// </summary>
             [RepositoryItem("9cf67a6d-22a8-414e-805f-68490d680e63")]
-            public virtual Ranorex.InputTag Text
+            public virtual Ranorex.InputTag TxtField_Search
             {
                 get
                 {
-                    return _textInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _txtfield_searchInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Text item info.
+            /// The TxtField_Search item info.
             /// </summary>
             [RepositoryItemInfo("9cf67a6d-22a8-414e-805f-68490d680e63")]
-            public virtual RepoItemInfo TextInfo
+            public virtual RepoItemInfo TxtField_SearchInfo
             {
                 get
                 {
-                    return _textInfo;
+                    return _txtfield_searchInfo;
                 }
             }
 
             /// <summary>
-            /// The SpanTagTo item.
+            /// The Btn_To item.
             /// </summary>
             [RepositoryItem("5015ee32-90e3-4858-9585-7876cc7375de")]
-            public virtual Ranorex.SpanTag SpanTagTo
+            public virtual Ranorex.SpanTag Btn_To
             {
                 get
                 {
-                    return _spantagtoInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _btn_toInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The SpanTagTo item info.
+            /// The Btn_To item info.
             /// </summary>
             [RepositoryItemInfo("5015ee32-90e3-4858-9585-7876cc7375de")]
-            public virtual RepoItemInfo SpanTagToInfo
+            public virtual RepoItemInfo Btn_ToInfo
             {
                 get
                 {
-                    return _spantagtoInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Text1 item.
-            /// </summary>
-            [RepositoryItem("d518b3a7-e01a-4d28-bbca-c3808f51b2af")]
-            public virtual Ranorex.InputTag Text1
-            {
-                get
-                {
-                    return _text1Info.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Text1 item info.
-            /// </summary>
-            [RepositoryItemInfo("d518b3a7-e01a-4d28-bbca-c3808f51b2af")]
-            public virtual RepoItemInfo Text1Info
-            {
-                get
-                {
-                    return _text1Info;
-                }
-            }
-
-            /// <summary>
-            /// The AppendTop12ForHideundefinedMakeFlex1 item.
-            /// </summary>
-            [RepositoryItem("1a8a91fa-f5d7-45b7-876a-e8fbace38ba9")]
-            public virtual Ranorex.DivTag AppendTop12ForHideundefinedMakeFlex1
-            {
-                get
-                {
-                    return _appendtop12forhideundefinedmakeflex1Info.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AppendTop12ForHideundefinedMakeFlex1 item info.
-            /// </summary>
-            [RepositoryItemInfo("1a8a91fa-f5d7-45b7-876a-e8fbace38ba9")]
-            public virtual RepoItemInfo AppendTop12ForHideundefinedMakeFlex1Info
-            {
-                get
-                {
-                    return _appendtop12forhideundefinedmakeflex1Info;
+                    return _btn_toInfo;
                 }
             }
 
@@ -439,70 +352,28 @@ namespace MakeMyTrip
                     return _puneInfo;
                 }
             }
-        }
-
-        /// <summary>
-        /// The MakeMyTripAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("a703aa26-0538-409f-93ac-69f4f4372afd")]
-        public partial class MakeMyTripAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _btn_closesignupInfo;
 
             /// <summary>
-            /// Creates a new MakeMyTrip  folder.
+            /// The Hyderabad item.
             /// </summary>
-            public MakeMyTripAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("MakeMyTrip", "/dom[@domain='www.makemytrip.com']", parentFolder, 30000, null, false, "a703aa26-0538-409f-93ac-69f4f4372afd", "")
-            {
-                _btn_closesignupInfo = new RepoItemInfo(this, "Btn_CloseSignUp", ".//?/?/?/?/?/?/?/span[@class='commonModal__close']", "", 30000, null, "992c351e-915d-4052-891c-91b24a9044d7");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("a703aa26-0538-409f-93ac-69f4f4372afd")]
-            public virtual Ranorex.WebDocument Self
+            [RepositoryItem("861ef694-15f1-48d2-b18f-4bcdcdb58b6b")]
+            public virtual Ranorex.SpanTag Hyderabad
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                    return _hyderabadInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Self item info.
+            /// The Hyderabad item info.
             /// </summary>
-            [RepositoryItemInfo("a703aa26-0538-409f-93ac-69f4f4372afd")]
-            public virtual RepoItemInfo SelfInfo
+            [RepositoryItemInfo("861ef694-15f1-48d2-b18f-4bcdcdb58b6b")]
+            public virtual RepoItemInfo HyderabadInfo
             {
                 get
                 {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Btn_CloseSignUp item.
-            /// </summary>
-            [RepositoryItem("992c351e-915d-4052-891c-91b24a9044d7")]
-            public virtual Ranorex.SpanTag Btn_CloseSignUp
-            {
-                get
-                {
-                    return _btn_closesignupInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Btn_CloseSignUp item info.
-            /// </summary>
-            [RepositoryItemInfo("992c351e-915d-4052-891c-91b24a9044d7")]
-            public virtual RepoItemInfo Btn_CloseSignUpInfo
-            {
-                get
-                {
-                    return _btn_closesignupInfo;
+                    return _hyderabadInfo;
                 }
             }
         }

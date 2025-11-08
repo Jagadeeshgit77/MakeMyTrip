@@ -46,6 +46,15 @@ mode="Desktop">
 				https://www.makemytrip.com/
 			</url>
 		</openwebsiterecorditem>
+		<explicitdelayitem
+		duration="300ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"

@@ -79,44 +79,44 @@ namespace MakeMyTrip.HomePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FswInnerReturnPersuasion.From' at 13;7.", repo.ApplicationUnderTest.FswInnerReturnPersuasion.FromInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.FswInnerReturnPersuasion.From.Click("13;7");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.OneWayJourney.Btn_From' at 13;7.", repo.MakeMyTrip.OneWayJourney.Btn_FromInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.OneWayJourney.Btn_From.Click("13;7");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FswInnerReturnPersuasion.Text' at 40;23.", repo.ApplicationUnderTest.FswInnerReturnPersuasion.TextInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.FswInnerReturnPersuasion.Text.Click("40;23");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.OneWayJourney.TxtField_Search' at 40;23.", repo.MakeMyTrip.OneWayJourney.TxtField_SearchInfo, new RecordItemIndex(1));
+            repo.MakeMyTrip.OneWayJourney.TxtField_Search.Click("40;23");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Hyderabad' with focus on 'ApplicationUnderTest.FswInnerReturnPersuasion.Text'.", repo.ApplicationUnderTest.FswInnerReturnPersuasion.TextInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.FswInnerReturnPersuasion.Text.PressKeys("Hyderabad");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Hyderabad' with focus on 'MakeMyTrip.OneWayJourney.TxtField_Search'.", repo.MakeMyTrip.OneWayJourney.TxtField_SearchInfo, new RecordItemIndex(2));
+            repo.MakeMyTrip.OneWayJourney.TxtField_Search.PressKeys("Hyderabad");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Hyderabad') on item 'ApplicationUnderTest.Hyderabad'.", repo.ApplicationUnderTest.HyderabadInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.HyderabadInfo, "InnerText", "Hyderabad");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Hyderabad') on item 'MakeMyTrip.OneWayJourney.Hyderabad'.", repo.MakeMyTrip.OneWayJourney.HyderabadInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.MakeMyTrip.OneWayJourney.HyderabadInfo, "InnerText", "Hyderabad");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.AppendTop12ForHideundefinedMakeFlex' at 23;0.", repo.ApplicationUnderTest.AppendTop12ForHideundefinedMakeFlexInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.AppendTop12ForHideundefinedMakeFlex.Click("23;0");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.OneWayJourney.Hyderabad' at 23;0.", repo.MakeMyTrip.OneWayJourney.HyderabadInfo, new RecordItemIndex(4));
+            repo.MakeMyTrip.OneWayJourney.Hyderabad.Click("23;0");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FswInnerReturnPersuasion.SpanTagTo' at 6;11.", repo.ApplicationUnderTest.FswInnerReturnPersuasion.SpanTagToInfo, new RecordItemIndex(5));
-            repo.ApplicationUnderTest.FswInnerReturnPersuasion.SpanTagTo.Click("6;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.OneWayJourney.Btn_To' at 6;11.", repo.MakeMyTrip.OneWayJourney.Btn_ToInfo, new RecordItemIndex(5));
+            repo.MakeMyTrip.OneWayJourney.Btn_To.Click("6;11");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FswInnerReturnPersuasion.Text1' at 40;24.", repo.ApplicationUnderTest.FswInnerReturnPersuasion.Text1Info, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.FswInnerReturnPersuasion.Text1.Click("40;24");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.OneWayJourney.TxtField_Search' at 40;24.", repo.MakeMyTrip.OneWayJourney.TxtField_SearchInfo, new RecordItemIndex(6));
+            repo.MakeMyTrip.OneWayJourney.TxtField_Search.Click("40;24");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Pune' with focus on 'ApplicationUnderTest.FswInnerReturnPersuasion.Text1'.", repo.ApplicationUnderTest.FswInnerReturnPersuasion.Text1Info, new RecordItemIndex(7));
-            repo.ApplicationUnderTest.FswInnerReturnPersuasion.Text1.PressKeys("Pune");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Pune' with focus on 'MakeMyTrip.OneWayJourney.TxtField_Search'.", repo.MakeMyTrip.OneWayJourney.TxtField_SearchInfo, new RecordItemIndex(7));
+            repo.MakeMyTrip.OneWayJourney.TxtField_Search.PressKeys("Pune");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Pune') on item 'ApplicationUnderTest.FswInnerReturnPersuasion.Pune'.", repo.ApplicationUnderTest.FswInnerReturnPersuasion.PuneInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.FswInnerReturnPersuasion.PuneInfo, "InnerText", "Pune");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Pune') on item 'MakeMyTrip.OneWayJourney.Pune'.", repo.MakeMyTrip.OneWayJourney.PuneInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.MakeMyTrip.OneWayJourney.PuneInfo, "InnerText", "Pune");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FswInnerReturnPersuasion.AppendTop12ForHideundefinedMakeFlex1' at 21;29.", repo.ApplicationUnderTest.FswInnerReturnPersuasion.AppendTop12ForHideundefinedMakeFlex1Info, new RecordItemIndex(9));
-            repo.ApplicationUnderTest.FswInnerReturnPersuasion.AppendTop12ForHideundefinedMakeFlex1.Click("21;29");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.OneWayJourney.Pune' at Center.", repo.MakeMyTrip.OneWayJourney.PuneInfo, new RecordItemIndex(9));
+            repo.MakeMyTrip.OneWayJourney.Pune.Click();
             Delay.Milliseconds(0);
             
         }
