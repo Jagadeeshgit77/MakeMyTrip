@@ -39,7 +39,7 @@ namespace MakeMyTrip.HomePage
 //            divtagInfo.FindAdapter<DivTag>().Click("16;12");
 //        }
 
-        public void getCurrentDate()
+        public string getCurrentDate()
         {
         	System.DateTime date = System.DateTime.Now.AddDays(1);
         	return date.ToString("ddd MMM dd yyyy");
