@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace MakeMyTrip
+namespace MakeMyTrip.Utils
 {
     public partial class CloseBrowser
     {

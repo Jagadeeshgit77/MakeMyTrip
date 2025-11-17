@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="81450022-a8a9-4501-a67b-6bea8d92601f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_on_Book_Now_button_Pop_Up"
+	namespace="MakeMyTrip.FlightsList">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="06527d7b-209a-42f0-9810-ea19102df56e"
+		sx="681"
+		sy="831"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a1db9d5d-8f79-4400-a448-01c4da706664"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="613,808,121,40"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						lato-black button buttonPrimary buttonBig fontSize14
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						BOOK NOW
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						button buttonBig buttonPrimary fontSize14 lato-black
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//div[#'ffWrapper']/div/div[2]/div/div/div/div[1]/div[3]/?/?/button[@innertext='BOOK NOW']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="a800736c-8bce-4d90-aae4-3dfb054d1a87">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABcATcDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqOH/U
+p/uipKjh/wBSn+6KfQXUfQOlFA6Uhi0UUUAFFFFABRRRQAUUUUAJmjNRfZz/AM9pfzH+FH2c/wDP
+aX8x/hTsu4rvsS5ozUX2c/8APaX8x/hR9nP/AD2l/Mf4UWXcLvsS5ozUX2c/89pfzH+FH2c/89pf
+zH+FFl3C77EuaXNQ/Zz/AM9pfzH+FHkMPuzyZ98H+lFl3C77E1FQF5Iv9aAV/vr0/EdqmBzQ1YE7
+i0ySaKLHmyImem5gM0+srWEWS6sUcZVnII9srUydlc1pQU5crL/2y1/5+Yf++xR9stf+fmH/AL7F
+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
+Un7w9R6ioNUuBMFs7ULNMzBioPCqDnn06AfjV+a3gnx50Mcm3pvUHH50sUMUClYY0jUnOEUAZpmf
+Uxfs99/z4w/n/wDZUfZ77/nxh/P/AOyrdoovL+ZmntI/yL7v+CYX2e+/58Ifz/8Asqmj/tOMYSzg
+UexH/wAVWvRSd3u2NVIr7C/r5mWJtXH/AC6w/n/9lT9KguIpbmS5jCGVg3BB9c/zrRopcut7g614
+uKSVwqOH/Up/uinuwRSx6CmxjbGqnqABV9DDqOoHSigdKQxaKKKACiiigAooooAKKKKAI9rf89G/
+T/Cja3/PRv0/wp9FO4rDNrf89G/T/Cja3/PRv0/wp9FFwsM2t/z0b9P8KNrf89G/T/Cn0UXCwza3
+/PRv0/wo2t/z0b9P8KfRRcLDNrf89G/T/Cja3/PRv0/wp9FFwsM2t/z0b9P8KNrf89G/T/Cn0UXC
+wza3/PRv0/wo2t/z0b9P8KfRRcLDNrf89G/T/Cja3/PRv0/wp9FFwsM2t/z0b9P8KNrf89G/T/Cn
+0UXCwza3/PRv0/wo2t/z0b9P8KfRRcLDNrf89G/T/Cja3/PRv0/wp9FFwsM2t/z0b9P8KNrf89G/
+T/Cn0UXCwza3/PRv0/wo2t/z0b9P8KfRRcLDNrf89G/T/Cja3/PRv0/wp9FFwsMCDOWJYjpmn0UU
+hhSUtFABz60c+tFFABz60c+tFFABz60c+tFFABz60UUUAf/Z
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
+	name="MakeMyTripRepository"
+	relativepath="..\MakeMyTripRepository.rxrep">
+		<codegen
+		classname="MakeMyTripRepository"
+		namespace="MakeMyTrip">
+		</codegen>
+		<rootfolder
+		id="fd994926-984c-4c0e-b481-b5d0ff6b74ed"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_on_Book_Now_button_Pop_Up.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

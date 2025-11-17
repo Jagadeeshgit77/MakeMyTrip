@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cd178ab4-77e1-45cb-8da9-885cef1050ca"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="verifyFilteredFlights"
+	namespace="MakeMyTrip.FlightsList">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cd71c7a7-3699-4512-b0ec-3df415ea2db6"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="832813e0-50ad-42ab-ac50-98c8d84ed23f"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="729,709,42,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						boldFont blackText airlineName
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						IndiGo
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						airlineName blackText boldFont
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-test"
+					readonly="False"
+					type="System.String">
+						component-airlineHeading
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//div[#'listing-id']/div/div[2]/div/div/div[1]/div[2]/div[1]/div[1]/div[1]/?/?/p[@innertext='IndiGo']
+				</path>
+				<robustPath>
+					/dom[@domain='www.makemytrip.com']//div[#'listing-id']//p[@innertext='IndiGo']
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="a614e9f7-10e3-49a8-b97a-b567e49341eb">
+				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
+			</helperscreenshot>
+			<matchname>
+				Class
+			</matchname>
+			<matchvalue>
+				boldFont blackText airlineName
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e4870e00-58af-4d4a-8aab-58fc6ba44ea4"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="832813e0-50ad-42ab-ac50-98c8d84ed23f"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="729,709,42,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						boldFont blackText airlineName
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						IndiGo
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						airlineName blackText boldFont
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-test"
+					readonly="False"
+					type="System.String">
+						component-airlineHeading
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//div[#'listing-id']/div/div[2]/div/div/div[1]/div[2]/div[1]/div[1]/div[1]/?/?/p[@innertext='IndiGo']
+				</path>
+				<robustPath>
+					/dom[@domain='www.makemytrip.com']//div[#'listing-id']//p[@innertext='IndiGo']
+				</robustPath>
+			</info>
+			<matchname>
+				data-test
+			</matchname>
+			<matchvalue>
+				component-airlineHeading
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="19;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c17e7c48-58c1-4d4c-9ec0-229095c5f491"
+		sx="748"
+		sy="718"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="832813e0-50ad-42ab-ac50-98c8d84ed23f"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="729,709,42,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						boldFont blackText airlineName
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						IndiGo
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						airlineName blackText boldFont
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-describedby"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-test"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//div[#'listing-id']/div/div[2]/div/div/div[1]/div[2]/div[1]/div[1]/div[1]/?/?/p[@innertext='IndiGo']
+				</path>
+				<robustPath>
+					/dom[@domain='www.makemytrip.com']//div[#'listing-id']//p[@innertext='IndiGo']
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="24b8e939-6729-4afd-953b-0f76f0693492">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
+	name="MakeMyTripRepository"
+	relativepath="..\MakeMyTripRepository.rxrep">
+		<codegen
+		classname="MakeMyTripRepository"
+		namespace="MakeMyTrip">
+		</codegen>
+		<rootfolder
+		id="fd994926-984c-4c0e-b481-b5d0ff6b74ed"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		verifyFilteredFlights.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -40,6 +40,12 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
+			id="03e22aca-4ec6-42b3-9814-fc0b3848ccd2"
+			name="Select_Indigo_Verify_Filtered_Flights"
+			ref="6c608de2-7f6c-4654-9224-a0185b3605ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="0b3d4c9e-5073-4022-b070-b2dd7df99814"
 			name="Close_signUp_pop_up"
 			ref="71151cdb-565c-4f07-bf02-4ea3707c41e9"
@@ -49,9 +55,21 @@
 				</description>
 			</testmodule>
 			<testmodule
+			id="0d2330c9-47c0-401f-b6b3-72771865b7fd"
+			name="ClickOnSearch"
+			ref="98983af6-2cdd-4095-955f-2a9206a8a447"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="2dfcf64a-a39e-4e65-9e50-4e6f57b8da1e"
 			name="FromAndToCity"
 			ref="e60677e2-ac0b-4f7b-b827-83c44354acf3"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="364ce03f-2d25-47ec-98e4-16b464d8ae15"
+			name="ClickOnMoreButton"
+			ref="eb475624-4f93-41b9-b861-83037f74a4b8"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -62,17 +80,47 @@
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="81e04f73-b38b-4660-bf3f-d3e49e59400e"
+			name="TC02_Select_source_destination_cities_and_click_on_Search_button">
+			</testcase>
+			<testmodule
+			id="8e057a3b-ceac-4f88-a398-f32da71d6841"
+			name="Click_On_ViewPrices_Button"
+			ref="652d0c05-9479-453b-bdf4-07ce385a1057"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8edc636f-05e3-4b8d-8a89-18b114b19f82"
+			name="Click_on_Book_Now_button_Pop_Up"
+			ref="81450022-a8a9-4501-a67b-6bea8d92601f"
+			type="Recording">
+			</testmodule>
+			<testcase
 			id="8ff67c3d-c8b5-4249-b224-dbaa07eb5135"
-			name="TestCase">
+			name="TC03_Close_Make_my_trip_Application">
 			</testcase>
 			<testcase
 			id="94b161d0-17be-46c3-a7d8-97b5c7264d14"
 			name="MakeMyTrip"
 			reportlevel="Info;20">
 			</testcase>
+			<testmodule
+			id="9e2e76ae-b3db-4645-8d0a-5411a7da6b95"
+			name="ClickOnDate"
+			ref="7fc28926-86e7-4224-8798-ffc7c00174d7"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="9f50df01-7f24-4e23-b737-a739e0b400e6"
+			name="TC03_Select_Indigo_flight_and_Verify_flights_are_filtered">
+			</testcase>
 			<testcase
 			id="c00ce0ac-9016-4e88-aea4-f43bd48841ad"
-			name="TestCase">
+			name="TC01_Open_Make_my_trip_Application">
+			</testcase>
+			<testcase
+			id="c1cfe7f6-d643-4c9f-aa3c-eebe79857068"
+			name="TC04_Click_on_View_Prices_button_and_navigate_to_booking_page">
 			</testcase>
 			<testmodule
 			id="f0eb073a-215e-4ff2-b60a-82e4cbf60caa"
@@ -93,11 +141,15 @@
 				name="MakeMyTrip">
 					<testcase
 					id="c00ce0ac-9016-4e88-aea4-f43bd48841ad"
-					name="TestCase">
+					name="TC01_Open_Make_my_trip_Application">
 						<testmodule
 						id="f0eb073a-215e-4ff2-b60a-82e4cbf60caa"
 						name="OpenBrowser">
 						</testmodule>
+					</testcase>
+					<testcase
+					id="81e04f73-b38b-4660-bf3f-d3e49e59400e"
+					name="TC02_Select_source_destination_cities_and_click_on_Search_button">
 						<testmodule
 						id="0b3d4c9e-5073-4022-b070-b2dd7df99814"
 						name="Close_signUp_pop_up">
@@ -106,10 +158,42 @@
 						id="2dfcf64a-a39e-4e65-9e50-4e6f57b8da1e"
 						name="FromAndToCity">
 						</testmodule>
+						<testmodule
+						id="9e2e76ae-b3db-4645-8d0a-5411a7da6b95"
+						name="ClickOnDate">
+						</testmodule>
+						<testmodule
+						id="0d2330c9-47c0-401f-b6b3-72771865b7fd"
+						name="ClickOnSearch">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="9f50df01-7f24-4e23-b737-a739e0b400e6"
+					name="TC03_Select_Indigo_flight_and_Verify_flights_are_filtered">
+						<testmodule
+						id="364ce03f-2d25-47ec-98e4-16b464d8ae15"
+						name="ClickOnMoreButton">
+						</testmodule>
+						<testmodule
+						id="03e22aca-4ec6-42b3-9814-fc0b3848ccd2"
+						name="Select_Indigo_Verify_Filtered_Flights">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="c1cfe7f6-d643-4c9f-aa3c-eebe79857068"
+					name="TC04_Click_on_View_Prices_button_and_navigate_to_booking_page">
+						<testmodule
+						id="8e057a3b-ceac-4f88-a398-f32da71d6841"
+						name="Click_On_ViewPrices_Button">
+						</testmodule>
+						<testmodule
+						id="8edc636f-05e3-4b8d-8a89-18b114b19f82"
+						name="Click_on_Book_Now_button_Pop_Up">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="8ff67c3d-c8b5-4249-b224-dbaa07eb5135"
-					name="TestCase">
+					name="TC03_Close_Make_my_trip_Application">
 						<testmodule
 						id="50b0faf6-182b-43dd-a5db-31e49e53eb1e"
 						name="CloseBrowser">
@@ -126,13 +210,22 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="81e04f73-b38b-4660-bf3f-d3e49e59400e">
+			</testcontainer>
+			<testcontainer
 			id="8ff67c3d-c8b5-4249-b224-dbaa07eb5135">
 			</testcontainer>
 			<testcontainer
 			id="94b161d0-17be-46c3-a7d8-97b5c7264d14">
 			</testcontainer>
 			<testcontainer
+			id="9f50df01-7f24-4e23-b737-a739e0b400e6">
+			</testcontainer>
+			<testcontainer
 			id="c00ce0ac-9016-4e88-aea4-f43bd48841ad">
+			</testcontainer>
+			<testcontainer
+			id="c1cfe7f6-d643-4c9f-aa3c-eebe79857068">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

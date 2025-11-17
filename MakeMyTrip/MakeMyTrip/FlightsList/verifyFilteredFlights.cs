@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace MakeMyTrip
+namespace MakeMyTrip.FlightsList
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseBrowser recording.
+    ///The verifyFilteredFlights recording.
     /// </summary>
-    [TestModule("26a78c26-30f6-436c-a080-ad27b19844ec", ModuleType.Recording, 1)]
-    public partial class CloseBrowser : ITestModule
+    [TestModule("cd178ab4-77e1-45cb-8da9-885cef1050ca", ModuleType.Recording, 1)]
+    public partial class verifyFilteredFlights : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the MakeMyTripRepository repository.
+        /// Holds an instance of the global::MakeMyTrip.MakeMyTripRepository repository.
         /// </summary>
-        public static MakeMyTripRepository repo = MakeMyTripRepository.Instance;
+        public static global::MakeMyTrip.MakeMyTripRepository repo = global::MakeMyTrip.MakeMyTripRepository.Instance;
 
-        static CloseBrowser instance = new CloseBrowser();
+        static verifyFilteredFlights instance = new verifyFilteredFlights();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseBrowser()
+        public verifyFilteredFlights()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseBrowser Instance
+        public static verifyFilteredFlights Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,16 @@ namespace MakeMyTrip
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'MakeMyTrip'.", repo.MakeMyTrip.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.MakeMyTrip.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Class='boldFont blackText airlineName') on item 'MakeMyTrip.Txt_fliteredFlights'.", repo.MakeMyTrip.Txt_fliteredFlightsInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.MakeMyTrip.Txt_fliteredFlightsInfo, "Class", "boldFont blackText airlineName");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (data-test='component-airlineHeading') on item 'MakeMyTrip.Txt_fliteredFlights'.", repo.MakeMyTrip.Txt_fliteredFlightsInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.MakeMyTrip.Txt_fliteredFlightsInfo, "data-test", "component-airlineHeading");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Txt_fliteredFlights' at 19;9.", repo.MakeMyTrip.Txt_fliteredFlightsInfo, new RecordItemIndex(2));
+            repo.MakeMyTrip.Txt_fliteredFlights.Click("19;9");
             Delay.Milliseconds(0);
             
         }

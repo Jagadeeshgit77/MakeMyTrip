@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="d9c19e6e-0e59-4ac6-b9ff-89bb4a508a77"
+id="26a78c26-30f6-436c-a080-ad27b19844ec"
 mode="Desktop">
 	<repeatcount>
 		1
@@ -19,47 +19,37 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="OpenBrowser"
-	namespace="MakeMyTrip">
+	classname="CloseBrowser"
+	namespace="MakeMyTrip.Utils">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<openwebsiterecorditem
-		args=""
-		browser="EdgeChromium"
-		clearcache="False"
-		clearcodecache="False"
-		clearcookies="False"
-		clearserviceworker="False"
+		<closeapprecorditem
 		enabled="True"
-		incognito="False"
-		instrument="True"
-		killexisting="False"
-		maximized="False"
-		optional="False">
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="5a76f86d-446d-4829-aa40-0e63328695d2">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<url>
-				https://www.makemytrip.com/
-			</url>
-		</openwebsiterecorditem>
-		<explicitdelayitem
-		duration="300ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
+			<info
+			id="2e48572a-9551-466b-8365-b7c5135cb9ef"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='www.ranorex.com']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
 	name="MakeMyTripRepository"
-	relativepath="MakeMyTripRepository.rxrep">
+	relativepath="..\MakeMyTripRepository.rxrep">
 		<codegen
 		classname="MakeMyTripRepository"
 		namespace="MakeMyTrip">
@@ -71,7 +61,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		OpenBrowser.UserCode.cs
+		CloseBrowser.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

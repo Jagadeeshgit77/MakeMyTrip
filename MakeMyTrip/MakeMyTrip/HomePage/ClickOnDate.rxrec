@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7fc28926-86e7-4224-8798-ffc7c00174d7"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickOnDate"
+	namespace="MakeMyTrip.HomePage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="92e9d40c-ab3f-416b-989d-88a617efda14"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d3172319-054b-440b-8dc0-cdf09b2d028e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']/?/div[@class='DayPicker-Day DayPicker-Day--selected']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
+	name="MakeMyTripRepository"
+	relativepath="..\MakeMyTripRepository.rxrep">
+		<codegen
+		classname="MakeMyTripRepository"
+		namespace="MakeMyTrip">
+		</codegen>
+		<rootfolder
+		id="fd994926-984c-4c0e-b481-b5d0ff6b74ed"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		test.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

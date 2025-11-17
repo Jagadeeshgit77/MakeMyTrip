@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6c608de2-7f6c-4654-9224-a0185b3605ff"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Indigo_Verify_Filtered_Flights"
+	namespace="MakeMyTrip.FlightsList">
+	</codegen>
+	<variables>
+		<var
+		id="ab24b604-4524-441a-8299-0c652d28aabf"
+		name="flightName">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Select_Indigo_Verify_Filtered_Flights"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="selectChkBoxAndGetTxt"
+		namespace="MakeMyTrip.FlightsList"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="1ce26dfb-7919-4b11-aefb-4172c0b6dc8d">
+				<argument
+				argname="ptagInfo"
+				id="0aa325da-ddea-4ddd-9191-a860d74aaa3e">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="a6a3d68b-232f-406a-919c-ad23978874ca"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='www.makemytrip.com']//div[#'root']/?//p[@innertext=' IndiGo   ' and @safeclass='checkboxTitle']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
+	name="MakeMyTripRepository"
+	relativepath="..\MakeMyTripRepository.rxrep">
+		<codegen
+		classname="MakeMyTripRepository"
+		namespace="MakeMyTrip">
+		</codegen>
+		<rootfolder
+		id="fd994926-984c-4c0e-b481-b5d0ff6b74ed"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Indigo_Verify_Filtered_Flights.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

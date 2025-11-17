@@ -63,6 +63,36 @@ name="MakeMyTripRepository">
 			searchtimeout="30000ms">
 				/dom[@domain='www.makemytrip.com']//?//div[@aria-label=$date]
 			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="6c339a6a-73c5-4960-8027-b32a4c4b00e8"
+			name="Search"
+			refimgid="249477e6-2f72-499a-bf7b-45767dc6e0e9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//?//p/a[@innertext='Search']
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="832813e0-50ad-42ab-ac50-98c8d84ed23f"
+			name="Txt_fliteredFlights"
+			refimgid="a4f8f6f7-2181-412c-ad79-c2bc83a0d50e"
+			robustPath="/dom[@domain='www.makemytrip.com']//div[#'listing-id']//p[@innertext='IndiGo']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//?//p[@class='boldFont blackText airlineName']
+			</item>
+			<item
+			addcaps="button,webelement,buttontag"
+			capname="buttontag"
+			id="a1db9d5d-8f79-4400-a448-01c4da706664"
+			name="Btn_BookNow"
+			refimgid="e8adfafc-a8ff-4dd7-a489-1e04570f108c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='www.makemytrip.com']//?/button[@innertext='BOOK NOW']
+			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
@@ -152,8 +182,101 @@ name="MakeMyTripRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']//?//div[@aria-label='Sat Nov08 2025']
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="d3172319-054b-440b-8dc0-cdf09b2d028e"
+				name="DayPickerDay"
+				refimgid="e034f50b-4928-4176-b8db-a3a566337357"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[4]/div[@aria-selected='true']
+				</item>
 				<basepath>
 					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="6ec815fc-0d4f-4c0d-81b8-b426038b6d6c"
+			isrooted="True"
+			name="FlightList"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="a6a3d68b-232f-406a-919c-ad23978874ca"
+				name="ChxBox_Flight"
+				refimgid="e32fba24-3996-462c-83c5-7d4db111bdda"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'root']/?//p[@innertext=' IndiGo   ' and @safeclass='checkboxTitle']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="349c5a25-fb6c-46f5-8fe3-9e22b916bf24"
+				name="LinkTxt_More"
+				refimgid="46806ed1-4bf0-4591-b7e1-a2fcefead906"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'root']//span[@innertext='+ 2 more']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'root']/*/p/span[@class='linkText pointer']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="9678e447-0922-4cad-ac15-34e721b79eb9"
+				name="Btn_ViewPrices"
+				refimgid="6f057871-b321-4080-a643-e3353db85d64"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'listing-id']/div/div[2]/div/div[2]/div[1]/div[2]/div[1]/div[2]/div/button/span[@innertext='VIEW PRICES']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'root']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'root']//button/span[@innertext='VIEW PRICES']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="0866c792-0d51-4887-99d5-905b90984ab6"
+				name="Btn_OkayGotIt"
+				refimgid="3aa46445-bd02-49b9-95cf-da649cea28cc"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'root']//?//a[@innertext='Okay, Got it']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="dd1aebcf-071a-46ae-88df-1f6356ea040b"
+				name="Txt_Price"
+				refimgid="f282dce2-590c-48ea-811f-54a87cc35066"
+				refpath="/dom[@domain='www.makemytrip.com' and @caption='MakeMyTrip' and @page='']//div[#'root']/div/div[2]/div[2]/div/div/div[2]/div[1]/div/section/div[3]/p/span[@innertext='₹ 11,411']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'root']//span[@innertext='₹ 11,411']"
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'root']/div/div[2]/div[2]/div//section/div[3]/?/?/span[@innertext='₹ 11,411']
+				</item>
+				<item
+				addcaps="unknown,webelement,btag"
+				capname="btag"
+				id="20da5c42-80d5-4388-8a5c-d26d16bb9151"
+				name="Btn_Apply"
+				refimgid="3f1fa34a-7c4e-4e02-94d8-e42642192825"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'root']/?//b[@innertext='Apply']
+				</item>
+				<item
+				addcaps="unknown,webelement,ptag"
+				capname="ptag"
+				id="8a95443d-8f77-497e-84f2-0b6c40cf479e"
+				name="Txt_CouponApplied"
+				refimgid="094c0fd0-953a-4f05-8497-d626ac61ede3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'root']//?//p[@class='fontSize22 blackFont']
+				</item>
+				<basepath>
+					/dom[@domain='www.makemytrip.com']//div[#'root']
 				</basepath>
 			</folder>
 			<basepath>

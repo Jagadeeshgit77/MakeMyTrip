@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="652d0c05-9479-453b-bdf4-07ce385a1057"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_On_ViewPrices_Button"
+	namespace="MakeMyTrip.FlightsList">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b9f69c10-39c4-49f6-baa3-59740eb22535"
+		sx="1444"
+		sy="824"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9678e447-0922-4cad-ac15-34e721b79eb9"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="1438,825,81,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						VIEW PRICES
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-test"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//div[#'listing-id']/div/div[2]/div/div[2]/div[1]/div[2]//button/span[@innertext='VIEW PRICES']
+				</path>
+				<robustPath>
+					/dom[@domain='www.makemytrip.com']//div[#'listing-id']//span[@innertext='VIEW PRICES']
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="3c1e0e56-bd3a-4000-aebf-775e126997c3">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
+	name="MakeMyTripRepository"
+	relativepath="..\MakeMyTripRepository.rxrep">
+		<codegen
+		classname="MakeMyTripRepository"
+		namespace="MakeMyTrip">
+		</codegen>
+		<rootfolder
+		id="fd994926-984c-4c0e-b481-b5d0ff6b74ed"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_On_ViewPrices_Button.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>bbdd772f-9b52-465c-ba86-b06b33dfe277</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -125,20 +126,92 @@
     <Compile Include="AssemblyInfo.cs">
       <id>aeb7ebb6-7984-419a-9833-3aae3331b4f0</id>
     </Compile>
-    <Compile Include="CloseBrowser.cs">
-      <BoundTo>47ef7fe4-a6fd-43b2-b03c-ec03a3aeb118</BoundTo>
-      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+    <Compile Include="BookingPage\Apply_Coupon_And_Validate_Price.cs">
+      <BoundTo>af6ac341-992c-4a15-a033-cf60abf68737</BoundTo>
+      <DependentUpon>Apply_Coupon_And_Validate_Price.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>d57f1544-3be9-4de4-8448-4d1752b2866b</id>
+      <id>dc458ff6-1ee8-4fb7-9980-0d69a3b358de</id>
     </Compile>
-    <Compile Include="CloseBrowser.UserCode.cs">
-      <BoundTo>47ef7fe4-a6fd-43b2-b03c-ec03a3aeb118</BoundTo>
-      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+    <Compile Include="BookingPage\Apply_Coupon_And_Validate_Price.UserCode.cs">
+      <BoundTo>af6ac341-992c-4a15-a033-cf60abf68737</BoundTo>
+      <DependentUpon>Apply_Coupon_And_Validate_Price.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>6aed54f3-c5ca-41db-be6e-20013052005a</id>
+      <id>b8faa66a-c3a9-46a4-ac01-4b0a09e0b5e0</id>
     </Compile>
-    <Compile Include="CodeModules\Date.cs">
-      <id>e4ade387-f44b-49b0-afdb-96448f9e1e52</id>
+    <Compile Include="CodeModules\ValidatePrices.cs">
+      <id>169c39ca-d8ea-43bd-aa06-f972c54bf865</id>
+    </Compile>
+    <Compile Include="FlightsList\Click_on_Book_Now_button_Pop_Up.cs">
+      <BoundTo>67b23d0f-9b69-4b0a-b28d-362a7b7bf540</BoundTo>
+      <DependentUpon>Click_on_Book_Now_button_Pop_Up.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>51760555-48b4-4b52-90fa-560d4a6fe2d4</id>
+    </Compile>
+    <Compile Include="FlightsList\Click_on_Book_Now_button_Pop_Up.UserCode.cs">
+      <BoundTo>67b23d0f-9b69-4b0a-b28d-362a7b7bf540</BoundTo>
+      <DependentUpon>Click_on_Book_Now_button_Pop_Up.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3c952dd5-ef6a-403d-b608-ffed3fd5a189</id>
+    </Compile>
+    <Compile Include="FlightsList\ClickOnMoreButton.cs">
+      <BoundTo>a02a0225-2b10-4aa5-8caa-51a3546fdc48</BoundTo>
+      <DependentUpon>ClickOnMoreButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a7904f4c-5e96-4f66-b25e-a8cd3afc7c72</id>
+    </Compile>
+    <Compile Include="FlightsList\ClickOnMoreButton.UserCode.cs">
+      <BoundTo>a02a0225-2b10-4aa5-8caa-51a3546fdc48</BoundTo>
+      <DependentUpon>ClickOnMoreButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ba4167d-1841-425d-802c-d0c20da0ce75</id>
+    </Compile>
+    <Compile Include="FlightsList\Click_On_ViewPrices_Button.cs">
+      <BoundTo>b5b8458a-fbff-428b-8021-1868a4b83453</BoundTo>
+      <DependentUpon>Click_On_ViewPrices_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b51862b9-e384-4af6-ba4d-f6ba7fb09d00</id>
+    </Compile>
+    <Compile Include="FlightsList\Click_On_ViewPrices_Button.UserCode.cs">
+      <BoundTo>b5b8458a-fbff-428b-8021-1868a4b83453</BoundTo>
+      <DependentUpon>Click_On_ViewPrices_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b2bb70d0-8700-424e-859f-350296a0e5e7</id>
+    </Compile>
+    <Compile Include="FlightsList\Select_Indigo_Verify_Filtered_Flights.cs">
+      <BoundTo>ac809a38-26d4-4948-b34a-9c8203ee2d2d</BoundTo>
+      <DependentUpon>Select_Indigo_Verify_Filtered_Flights.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e98bc9e-2b8f-4bc0-b755-c9d1515491c7</id>
+    </Compile>
+    <Compile Include="FlightsList\Select_Indigo_Verify_Filtered_Flights.UserCode.cs">
+      <BoundTo>ac809a38-26d4-4948-b34a-9c8203ee2d2d</BoundTo>
+      <DependentUpon>Select_Indigo_Verify_Filtered_Flights.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>686e543c-86b6-4188-a38a-efa9a94fcadc</id>
+    </Compile>
+    <Compile Include="FlightsList\verifyFilteredFlights.cs">
+      <BoundTo>5bab5a75-b922-4801-91bc-7aa793e45d23</BoundTo>
+      <DependentUpon>verifyFilteredFlights.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b3356cb-ca3a-450f-87d1-265249c38284</id>
+    </Compile>
+    <Compile Include="FlightsList\verifyFilteredFlights.UserCode.cs">
+      <BoundTo>5bab5a75-b922-4801-91bc-7aa793e45d23</BoundTo>
+      <DependentUpon>verifyFilteredFlights.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6b9d1738-bc58-4a21-abf5-de364b50beb8</id>
+    </Compile>
+    <Compile Include="HomePage\ClickOnSearch.cs">
+      <BoundTo>c4289f47-d282-4fb6-82e5-63d725486ea0</BoundTo>
+      <DependentUpon>ClickOnSearch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8242a54a-3c60-42a5-93a2-295356b34b95</id>
+    </Compile>
+    <Compile Include="HomePage\ClickOnSearch.UserCode.cs">
+      <BoundTo>c4289f47-d282-4fb6-82e5-63d725486ea0</BoundTo>
+      <DependentUpon>ClickOnSearch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f1702d8-faf8-40af-9114-ff39d89ba6e6</id>
     </Compile>
     <Compile Include="HomePage\Close_signUp_pop_up.cs">
       <DependentUpon>Close_signUp_pop_up.rxrec</DependentUpon>
@@ -151,18 +224,6 @@
       <UserCode>true</UserCode>
       <id>1a200041-1879-4b8e-ae76-e1c05eecf084</id>
       <BoundTo>cff7d8f4-6e10-4c1d-b571-7588ef14a599</BoundTo>
-    </Compile>
-    <Compile Include="HomePage\Date.cs">
-      <BoundTo>0d7b2935-146a-4834-9d29-1243d7ebf694</BoundTo>
-      <DependentUpon>Date.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>b39b9489-8694-4a85-9500-d5685734c589</id>
-    </Compile>
-    <Compile Include="HomePage\Date.UserCode.cs">
-      <BoundTo>0d7b2935-146a-4834-9d29-1243d7ebf694</BoundTo>
-      <DependentUpon>Date.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>3df99794-f8d0-4889-bce6-3aec0ce9161e</id>
     </Compile>
     <Compile Include="HomePage\DepartureDate.cs">
       <BoundTo>44b08df5-c61b-4664-a272-e6a40fef6068</BoundTo>
@@ -188,46 +249,95 @@
       <UserCode>true</UserCode>
       <id>d4baa8c8-7169-484d-849e-7335ea36ec22</id>
     </Compile>
+    <Compile Include="HomePage\ClickOnDate.cs">
+      <BoundTo>029832e1-fe4e-43be-9e09-499a7fb046a8</BoundTo>
+      <DependentUpon>ClickOnDate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e674949e-1dde-460f-aedb-f0f7318f5856</id>
+    </Compile>
+    <Compile Include="HomePage\ClickOnDate.UserCode.cs">
+      <BoundTo>029832e1-fe4e-43be-9e09-499a7fb046a8</BoundTo>
+      <DependentUpon>ClickOnDate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>62d52d86-9297-495f-bcb3-da7ce99e46d7</id>
+    </Compile>
     <Compile Include="MakeMyTripRepository.cs">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
       <DependentUpon>MakeMyTripRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>3e9a2030-ca56-4bb5-af2b-97663eea68d2</id>
     </Compile>
-    <Compile Include="OpenBrowser.cs">
-      <BoundTo>43cc8095-7f94-4629-9c61-462e8b955ac0</BoundTo>
+    <Compile Include="Program.cs">
+      <id>edfeb3fd-2cf5-4d47-a932-ab828e07d6be</id>
+    </Compile>
+    <Compile Include="Utils\CloseBrowser.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d57f1544-3be9-4de4-8448-4d1752b2866b</id>
+      <BoundTo>47ef7fe4-a6fd-43b2-b03c-ec03a3aeb118</BoundTo>
+    </Compile>
+    <Compile Include="Utils\CloseBrowser.UserCode.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6aed54f3-c5ca-41db-be6e-20013052005a</id>
+      <BoundTo>47ef7fe4-a6fd-43b2-b03c-ec03a3aeb118</BoundTo>
+    </Compile>
+    <Compile Include="Utils\OpenBrowser.cs">
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>a382f72b-3452-4d62-9e14-5025296f0273</id>
-    </Compile>
-    <Compile Include="OpenBrowser.UserCode.cs">
       <BoundTo>43cc8095-7f94-4629-9c61-462e8b955ac0</BoundTo>
+    </Compile>
+    <Compile Include="Utils\OpenBrowser.UserCode.cs">
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>7a67f77d-5b54-418b-a900-bef5cdfa7289</id>
-    </Compile>
-    <Compile Include="Program.cs">
-      <id>edfeb3fd-2cf5-4d47-a932-ab828e07d6be</id>
+      <BoundTo>43cc8095-7f94-4629-9c61-462e8b955ac0</BoundTo>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <id>0d7af10e-391d-4762-a5c5-13d80239d96c</id>
     </None>
-    <None Include="CloseBrowser.rxrec">
+    <None Include="BookingPage\Apply_Coupon_And_Validate_Price.rxrec">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
-      <id>47ef7fe4-a6fd-43b2-b03c-ec03a3aeb118</id>
-      <recordtableid>26a78c26-30f6-436c-a080-ad27b19844ec</recordtableid>
+      <id>af6ac341-992c-4a15-a033-cf60abf68737</id>
+      <recordtableid>471c057b-4254-489b-a479-8155def55ca8</recordtableid>
+    </None>
+    <None Include="FlightsList\Click_on_Book_Now_button_Pop_Up.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>67b23d0f-9b69-4b0a-b28d-362a7b7bf540</id>
+      <recordtableid>81450022-a8a9-4501-a67b-6bea8d92601f</recordtableid>
+    </None>
+    <None Include="FlightsList\ClickOnMoreButton.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>a02a0225-2b10-4aa5-8caa-51a3546fdc48</id>
+      <recordtableid>eb475624-4f93-41b9-b861-83037f74a4b8</recordtableid>
+    </None>
+    <None Include="FlightsList\Click_On_ViewPrices_Button.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>b5b8458a-fbff-428b-8021-1868a4b83453</id>
+      <recordtableid>652d0c05-9479-453b-bdf4-07ce385a1057</recordtableid>
+    </None>
+    <None Include="FlightsList\Select_Indigo_Verify_Filtered_Flights.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>ac809a38-26d4-4948-b34a-9c8203ee2d2d</id>
+      <recordtableid>6c608de2-7f6c-4654-9224-a0185b3605ff</recordtableid>
+    </None>
+    <None Include="FlightsList\verifyFilteredFlights.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>5bab5a75-b922-4801-91bc-7aa793e45d23</id>
+      <recordtableid>cd178ab4-77e1-45cb-8da9-885cef1050ca</recordtableid>
+    </None>
+    <None Include="HomePage\ClickOnSearch.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>c4289f47-d282-4fb6-82e5-63d725486ea0</id>
+      <recordtableid>98983af6-2cdd-4095-955f-2a9206a8a447</recordtableid>
     </None>
     <None Include="HomePage\Close_signUp_pop_up.rxrec">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
       <id>cff7d8f4-6e10-4c1d-b571-7588ef14a599</id>
       <recordtableid>71151cdb-565c-4f07-bf02-4ea3707c41e9</recordtableid>
-    </None>
-    <None Include="HomePage\Date.rxrec">
-      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
-      <id>0d7b2935-146a-4834-9d29-1243d7ebf694</id>
-      <recordtableid>f8079bf8-f466-48fb-b215-78ad35c773f4</recordtableid>
     </None>
     <None Include="HomePage\DepartureDate.rxrec">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
@@ -238,6 +348,11 @@
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
       <id>c363f24d-1915-48e7-83df-d1252c4713e6</id>
       <recordtableid>e60677e2-ac0b-4f7b-b827-83c44354acf3</recordtableid>
+    </None>
+    <None Include="HomePage\ClickOnDate.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>029832e1-fe4e-43be-9e09-499a7fb046a8</id>
+      <recordtableid>7fc28926-86e7-4224-8798-ffc7c00174d7</recordtableid>
     </None>
     <None Include="MakeMyTripRepository.rximg">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
@@ -250,7 +365,12 @@
       <repoid>5b48a8da-2eff-42c9-8e11-1f4489f71c77</repoid>
       <reporootid>fd994926-984c-4c0e-b481-b5d0ff6b74ed</reporootid>
     </None>
-    <None Include="OpenBrowser.rxrec">
+    <None Include="Utils\CloseBrowser.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>47ef7fe4-a6fd-43b2-b03c-ec03a3aeb118</id>
+      <recordtableid>26a78c26-30f6-436c-a080-ad27b19844ec</recordtableid>
+    </None>
+    <None Include="Utils\OpenBrowser.rxrec">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
       <id>43cc8095-7f94-4629-9c61-462e8b955ac0</id>
       <recordtableid>d9c19e6e-0e59-4ac6-b9ff-89bb4a508a77</recordtableid>
@@ -272,6 +392,15 @@
     </Folder>
     <Folder Include="CodeModules">
       <id>6ab2e0c3-917a-4deb-8de1-b234530d310a</id>
+    </Folder>
+    <Folder Include="FlightsList">
+      <id>92dc5626-77d3-4ce4-832d-9108746049de</id>
+    </Folder>
+    <Folder Include="BookingPage">
+      <id>abaf4461-47bd-4556-b740-9b7d29d8cc85</id>
+    </Folder>
+    <Folder Include="Utils">
+      <id>0976e6c8-16f2-40bb-8a7d-3cb9b10ab55a</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

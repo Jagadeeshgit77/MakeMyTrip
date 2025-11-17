@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace MakeMyTrip
+namespace MakeMyTrip.FlightsList
 {
-    public partial class OpenBrowser
+    public partial class Click_on_Book_Now_button_Pop_Up
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace MakeMyTrip
+namespace MakeMyTrip.FlightsList
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The OpenBrowser recording.
+    ///The Click_on_Book_Now_button_Pop_Up recording.
     /// </summary>
-    [TestModule("d9c19e6e-0e59-4ac6-b9ff-89bb4a508a77", ModuleType.Recording, 1)]
-    public partial class OpenBrowser : ITestModule
+    [TestModule("81450022-a8a9-4501-a67b-6bea8d92601f", ModuleType.Recording, 1)]
+    public partial class Click_on_Book_Now_button_Pop_Up : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the MakeMyTripRepository repository.
+        /// Holds an instance of the global::MakeMyTrip.MakeMyTripRepository repository.
         /// </summary>
-        public static MakeMyTripRepository repo = MakeMyTripRepository.Instance;
+        public static global::MakeMyTrip.MakeMyTripRepository repo = global::MakeMyTrip.MakeMyTripRepository.Instance;
 
-        static OpenBrowser instance = new OpenBrowser();
+        static Click_on_Book_Now_button_Pop_Up instance = new Click_on_Book_Now_button_Pop_Up();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public OpenBrowser()
+        public Click_on_Book_Now_button_Pop_Up()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static OpenBrowser Instance
+        public static Click_on_Book_Now_button_Pop_Up Instance
         {
             get { return instance; }
         }
@@ -79,12 +79,9 @@ namespace MakeMyTrip
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://www.makemytrip.com/' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("https://www.makemytrip.com/", "EdgeChromium", "", false, false, false, false, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Btn_BookNow' at Center.", repo.MakeMyTrip.Btn_BookNowInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.Btn_BookNow.Click();
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(1));
-            Delay.Duration(300, false);
             
         }
 

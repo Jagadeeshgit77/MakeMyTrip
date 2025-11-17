@@ -98,10 +98,14 @@ namespace MakeMyTrip
         public partial class MakeMyTripAppFolder : RepoGenBaseFolder
         {
             MakeMyTripRepositoryFolders.OneWayJourneyFolder _onewayjourney;
+            MakeMyTripRepositoryFolders.FlightListFolder _flightlist;
             RepoItemInfo _fromcityInfo;
             RepoItemInfo _tocityInfo;
             RepoItemInfo _btn_closesignupInfo;
             RepoItemInfo _currentdateInfo;
+            RepoItemInfo _searchInfo;
+            RepoItemInfo _txt_fliteredflightsInfo;
+            RepoItemInfo _btn_booknowInfo;
 
             /// <summary>
             /// Creates a new MakeMyTrip  folder.
@@ -110,10 +114,14 @@ namespace MakeMyTrip
                     base("MakeMyTrip", "/dom[@domain='www.makemytrip.com']", parentFolder, 30000, null, false, "2e48572a-9551-466b-8365-b7c5135cb9ef", "")
             {
                 _onewayjourney = new MakeMyTripRepositoryFolders.OneWayJourneyFolder(this);
+                _flightlist = new MakeMyTripRepositoryFolders.FlightListFolder(this);
                 _fromcityInfo = new RepoItemInfo(this, "FromCity", ".//input[#'fromCity']", ".//input[#'fromCity']", 30000, null, "f7df8194-6da8-4f92-9d71-d6ea83d60a94");
                 _tocityInfo = new RepoItemInfo(this, "ToCity", ".//input[#'toCity']", ".//input[#'toCity']", 30000, null, "fb7cdfb7-21c1-49a7-bd18-12bd8fa7b39b");
                 _btn_closesignupInfo = new RepoItemInfo(this, "Btn_CloseSignUp", ".//?//span[@class='commonModal__close']", "", 30000, null, "992c351e-915d-4052-891c-91b24a9044d7");
                 _currentdateInfo = new RepoItemInfo(this, "CurrentDate", ".//?//div[@aria-label=$date]", "", 30000, null, "706c38c0-90e8-4353-90cc-03e46ea9a924");
+                _searchInfo = new RepoItemInfo(this, "Search", ".//?//p/a[@innertext='Search']", "", 30000, null, "6c339a6a-73c5-4960-8027-b32a4c4b00e8");
+                _txt_fliteredflightsInfo = new RepoItemInfo(this, "Txt_fliteredFlights", ".//?//p[@class='boldFont blackText airlineName']", ".//div[#'listing-id']//p[@innertext='IndiGo']", 30000, null, "832813e0-50ad-42ab-ac50-98c8d84ed23f");
+                _btn_booknowInfo = new RepoItemInfo(this, "Btn_BookNow", ".//?/button[@innertext='BOOK NOW']", "", 30000, null, "a1db9d5d-8f79-4400-a448-01c4da706664");
             }
 
             /// <summary>
@@ -237,12 +245,93 @@ namespace MakeMyTrip
             }
 
             /// <summary>
+            /// The Search item.
+            /// </summary>
+            [RepositoryItem("6c339a6a-73c5-4960-8027-b32a4c4b00e8")]
+            public virtual Ranorex.ATag Search
+            {
+                get
+                {
+                    return _searchInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Search item info.
+            /// </summary>
+            [RepositoryItemInfo("6c339a6a-73c5-4960-8027-b32a4c4b00e8")]
+            public virtual RepoItemInfo SearchInfo
+            {
+                get
+                {
+                    return _searchInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Txt_fliteredFlights item.
+            /// </summary>
+            [RepositoryItem("832813e0-50ad-42ab-ac50-98c8d84ed23f")]
+            public virtual Ranorex.PTag Txt_fliteredFlights
+            {
+                get
+                {
+                    return _txt_fliteredflightsInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Txt_fliteredFlights item info.
+            /// </summary>
+            [RepositoryItemInfo("832813e0-50ad-42ab-ac50-98c8d84ed23f")]
+            public virtual RepoItemInfo Txt_fliteredFlightsInfo
+            {
+                get
+                {
+                    return _txt_fliteredflightsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Btn_BookNow item.
+            /// </summary>
+            [RepositoryItem("a1db9d5d-8f79-4400-a448-01c4da706664")]
+            public virtual Ranorex.ButtonTag Btn_BookNow
+            {
+                get
+                {
+                    return _btn_booknowInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Btn_BookNow item info.
+            /// </summary>
+            [RepositoryItemInfo("a1db9d5d-8f79-4400-a448-01c4da706664")]
+            public virtual RepoItemInfo Btn_BookNowInfo
+            {
+                get
+                {
+                    return _btn_booknowInfo;
+                }
+            }
+
+            /// <summary>
             /// The OneWayJourney folder.
             /// </summary>
             [RepositoryFolder("6c282f16-b0ae-47a1-b2e6-931c87f3bb0d")]
             public virtual MakeMyTripRepositoryFolders.OneWayJourneyFolder OneWayJourney
             {
                 get { return _onewayjourney; }
+            }
+
+            /// <summary>
+            /// The FlightList folder.
+            /// </summary>
+            [RepositoryFolder("6ec815fc-0d4f-4c0d-81b8-b426038b6d6c")]
+            public virtual MakeMyTripRepositoryFolders.FlightListFolder FlightList
+            {
+                get { return _flightlist; }
             }
         }
 
@@ -260,6 +349,7 @@ namespace MakeMyTrip
             RepoItemInfo _dateinnercellInfo;
             RepoItemInfo _spantag8Info;
             RepoItemInfo _dateinnercell1Info;
+            RepoItemInfo _daypickerdayInfo;
 
             /// <summary>
             /// Creates a new OneWayJourney  folder.
@@ -275,6 +365,7 @@ namespace MakeMyTrip
                 _dateinnercellInfo = new RepoItemInfo(this, "DateInnerCell", ".//?//div[@class='dateInnerCell']", "", 30000, null, "915ee245-07a3-4b30-8b26-25f0e53a539c");
                 _spantag8Info = new RepoItemInfo(this, "SpanTag8", "div[3]/label/p[1]/span[@innertext='8']", "", 30000, null, "c618256d-efc0-4dae-979a-ac52f7c75554");
                 _dateinnercell1Info = new RepoItemInfo(this, "DateInnerCell1", ".//?//div[@aria-label='Sat Nov08 2025']", "div[2]/div/div/div/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[2]/div[7]", 30000, null, "78b18a5b-01bc-4cf5-ba18-8d04784079c7");
+                _daypickerdayInfo = new RepoItemInfo(this, "DayPickerDay", "div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[4]/div[@aria-selected='true']", "", 30000, null, "d3172319-054b-440b-8dc0-cdf09b2d028e");
             }
 
             /// <summary>
@@ -490,6 +581,252 @@ namespace MakeMyTrip
                 get
                 {
                     return _dateinnercell1Info;
+                }
+            }
+
+            /// <summary>
+            /// The DayPickerDay item.
+            /// </summary>
+            [RepositoryItem("d3172319-054b-440b-8dc0-cdf09b2d028e")]
+            public virtual Ranorex.DivTag DayPickerDay
+            {
+                get
+                {
+                    return _daypickerdayInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DayPickerDay item info.
+            /// </summary>
+            [RepositoryItemInfo("d3172319-054b-440b-8dc0-cdf09b2d028e")]
+            public virtual RepoItemInfo DayPickerDayInfo
+            {
+                get
+                {
+                    return _daypickerdayInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FlightListFolder folder.
+        /// </summary>
+        [RepositoryFolder("6ec815fc-0d4f-4c0d-81b8-b426038b6d6c")]
+        public partial class FlightListFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _chxbox_flightInfo;
+            RepoItemInfo _linktxt_moreInfo;
+            RepoItemInfo _btn_viewpricesInfo;
+            RepoItemInfo _btn_okaygotitInfo;
+            RepoItemInfo _txt_priceInfo;
+            RepoItemInfo _btn_applyInfo;
+            RepoItemInfo _txt_couponappliedInfo;
+
+            /// <summary>
+            /// Creates a new FlightList  folder.
+            /// </summary>
+            public FlightListFolder(RepoGenBaseFolder parentFolder) :
+                    base("FlightList", ".//div[#'root']", parentFolder, 30000, null, false, "6ec815fc-0d4f-4c0d-81b8-b426038b6d6c", "")
+            {
+                _chxbox_flightInfo = new RepoItemInfo(this, "ChxBox_Flight", "?//p[@innertext=' IndiGo   ' and @safeclass='checkboxTitle']", "", 30000, null, "a6a3d68b-232f-406a-919c-ad23978874ca");
+                _linktxt_moreInfo = new RepoItemInfo(this, "LinkTxt_More", "*/p/span[@class='linkText pointer']", ".//span[@innertext='+ 2 more']", 30000, null, "349c5a25-fb6c-46f5-8fe3-9e22b916bf24");
+                _btn_viewpricesInfo = new RepoItemInfo(this, "Btn_ViewPrices", ".//button/span[@innertext='VIEW PRICES']", "", 30000, null, "9678e447-0922-4cad-ac15-34e721b79eb9");
+                _btn_okaygotitInfo = new RepoItemInfo(this, "Btn_OkayGotIt", ".//?//a[@innertext='Okay, Got it']", "", 30000, null, "0866c792-0d51-4887-99d5-905b90984ab6");
+                _txt_priceInfo = new RepoItemInfo(this, "Txt_Price", "div/div[2]/div[2]/div//section/div[3]/?/?/span[@innertext='₹ 11,411']", ".//span[@innertext='₹ 11,411']", 30000, null, "dd1aebcf-071a-46ae-88df-1f6356ea040b");
+                _btn_applyInfo = new RepoItemInfo(this, "Btn_Apply", "?//b[@innertext='Apply']", "", 30000, null, "20da5c42-80d5-4388-8a5c-d26d16bb9151");
+                _txt_couponappliedInfo = new RepoItemInfo(this, "Txt_CouponApplied", ".//?//p[@class='fontSize22 blackFont']", "", 30000, null, "8a95443d-8f77-497e-84f2-0b6c40cf479e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6ec815fc-0d4f-4c0d-81b8-b426038b6d6c")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6ec815fc-0d4f-4c0d-81b8-b426038b6d6c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ChxBox_Flight item.
+            /// </summary>
+            [RepositoryItem("a6a3d68b-232f-406a-919c-ad23978874ca")]
+            public virtual Ranorex.PTag ChxBox_Flight
+            {
+                get
+                {
+                    return _chxbox_flightInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ChxBox_Flight item info.
+            /// </summary>
+            [RepositoryItemInfo("a6a3d68b-232f-406a-919c-ad23978874ca")]
+            public virtual RepoItemInfo ChxBox_FlightInfo
+            {
+                get
+                {
+                    return _chxbox_flightInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LinkTxt_More item.
+            /// </summary>
+            [RepositoryItem("349c5a25-fb6c-46f5-8fe3-9e22b916bf24")]
+            public virtual Ranorex.SpanTag LinkTxt_More
+            {
+                get
+                {
+                    return _linktxt_moreInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LinkTxt_More item info.
+            /// </summary>
+            [RepositoryItemInfo("349c5a25-fb6c-46f5-8fe3-9e22b916bf24")]
+            public virtual RepoItemInfo LinkTxt_MoreInfo
+            {
+                get
+                {
+                    return _linktxt_moreInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Btn_ViewPrices item.
+            /// </summary>
+            [RepositoryItem("9678e447-0922-4cad-ac15-34e721b79eb9")]
+            public virtual Ranorex.SpanTag Btn_ViewPrices
+            {
+                get
+                {
+                    return _btn_viewpricesInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Btn_ViewPrices item info.
+            /// </summary>
+            [RepositoryItemInfo("9678e447-0922-4cad-ac15-34e721b79eb9")]
+            public virtual RepoItemInfo Btn_ViewPricesInfo
+            {
+                get
+                {
+                    return _btn_viewpricesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Btn_OkayGotIt item.
+            /// </summary>
+            [RepositoryItem("0866c792-0d51-4887-99d5-905b90984ab6")]
+            public virtual Ranorex.ATag Btn_OkayGotIt
+            {
+                get
+                {
+                    return _btn_okaygotitInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Btn_OkayGotIt item info.
+            /// </summary>
+            [RepositoryItemInfo("0866c792-0d51-4887-99d5-905b90984ab6")]
+            public virtual RepoItemInfo Btn_OkayGotItInfo
+            {
+                get
+                {
+                    return _btn_okaygotitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Txt_Price item.
+            /// </summary>
+            [RepositoryItem("dd1aebcf-071a-46ae-88df-1f6356ea040b")]
+            public virtual Ranorex.SpanTag Txt_Price
+            {
+                get
+                {
+                    return _txt_priceInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Txt_Price item info.
+            /// </summary>
+            [RepositoryItemInfo("dd1aebcf-071a-46ae-88df-1f6356ea040b")]
+            public virtual RepoItemInfo Txt_PriceInfo
+            {
+                get
+                {
+                    return _txt_priceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Btn_Apply item.
+            /// </summary>
+            [RepositoryItem("20da5c42-80d5-4388-8a5c-d26d16bb9151")]
+            public virtual Ranorex.BTag Btn_Apply
+            {
+                get
+                {
+                    return _btn_applyInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Btn_Apply item info.
+            /// </summary>
+            [RepositoryItemInfo("20da5c42-80d5-4388-8a5c-d26d16bb9151")]
+            public virtual RepoItemInfo Btn_ApplyInfo
+            {
+                get
+                {
+                    return _btn_applyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Txt_CouponApplied item.
+            /// </summary>
+            [RepositoryItem("8a95443d-8f77-497e-84f2-0b6c40cf479e")]
+            public virtual Ranorex.PTag Txt_CouponApplied
+            {
+                get
+                {
+                    return _txt_couponappliedInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Txt_CouponApplied item info.
+            /// </summary>
+            [RepositoryItemInfo("8a95443d-8f77-497e-84f2-0b6c40cf479e")]
+            public virtual RepoItemInfo Txt_CouponAppliedInfo
+            {
+                get
+                {
+                    return _txt_couponappliedInfo;
                 }
             }
         }

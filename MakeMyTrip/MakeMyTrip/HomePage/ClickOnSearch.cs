@@ -24,44 +24,34 @@ namespace MakeMyTrip.HomePage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Date recording.
+    ///The ClickOnSearch recording.
     /// </summary>
-    [TestModule("f8079bf8-f466-48fb-b215-78ad35c773f4", ModuleType.Recording, 1)]
-    public partial class Date : ITestModule
+    [TestModule("98983af6-2cdd-4095-955f-2a9206a8a447", ModuleType.Recording, 1)]
+    public partial class ClickOnSearch : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::MakeMyTrip.MakeMyTripRepository repository.
         /// </summary>
         public static global::MakeMyTrip.MakeMyTripRepository repo = global::MakeMyTrip.MakeMyTripRepository.Instance;
 
-        static Date instance = new Date();
+        static ClickOnSearch instance = new ClickOnSearch();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Date()
+        public ClickOnSearch()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Date Instance
+        public static ClickOnSearch Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable date.
-        /// </summary>
-        [TestVariable("a6e15f58-6f46-4bb7-b7e0-5de8b65baa27")]
-        public string date
-        {
-            get { return repo.date; }
-            set { repo.date = value; }
-        }
 
 #endregion
 
@@ -89,11 +79,8 @@ namespace MakeMyTrip.HomePage
 
             Init();
 
-            getCurrentDate();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.CurrentDate' at 16;12.", repo.MakeMyTrip.CurrentDateInfo, new RecordItemIndex(1));
-            repo.MakeMyTrip.CurrentDate.Click("16;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Search' at 98;29.", repo.MakeMyTrip.SearchInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.Search.Click("98;29");
             Delay.Milliseconds(0);
             
         }

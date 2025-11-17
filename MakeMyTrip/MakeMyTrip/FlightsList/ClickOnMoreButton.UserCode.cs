@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace MakeMyTrip.HomePage
+namespace MakeMyTrip.FlightsList
 {
-    public partial class Date
+    public partial class ClickOnMoreButton
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -32,21 +32,6 @@ namespace MakeMyTrip.HomePage
         {
             // Your recording specific initialization code goes here.
         }
-
-//        public void Mouse_Click_CurrentDate(RepoItemInfo divtagInfo)
-//        {
-//            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'divtagInfo' at 16;12.", divtagInfo);
-//            divtagInfo.FindAdapter<DivTag>().Click("16;12");
-//        }
-
-        public string getCurrentDate()
-        {
-        	System.DateTime date = System.DateTime.Now.AddDays(1);
-        	return date.ToString("ddd MMM dd yyyy");
-        	// TODO: Replace the following line with your code implementation.
-            throw new NotImplementedException();
-        }
-        
 
     }
 }
