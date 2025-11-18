@@ -25,6 +25,95 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b3438aec-7cc1-44fc-94e6-54f40c9b4266"
+		waitaction="Exists"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a1db9d5d-8f79-4400-a448-01c4da706664"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="613,812,121,40"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						lato-black button buttonPrimary buttonBig fontSize14
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						BOOK NOW
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						button buttonBig buttonPrimary fontSize14 lato-black
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//?/button[@innertext='BOOK NOW']
+				</path>
+				<robustPath>
+					/dom[@domain='www.makemytrip.com']//div[#'ffWrapper']//button[@innertext='BOOK NOW']
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

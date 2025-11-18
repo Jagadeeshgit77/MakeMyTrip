@@ -79,7 +79,13 @@ namespace MakeMyTrip.FlightsList
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Btn_BookNow' at Center.", repo.MakeMyTrip.Btn_BookNowInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'MakeMyTrip.Btn_BookNow'", repo.MakeMyTrip.Btn_BookNowInfo, new ActionTimeout(5000), new RecordItemIndex(1));
+            repo.MakeMyTrip.Btn_BookNowInfo.WaitForExists(5000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Btn_BookNow' at Center.", repo.MakeMyTrip.Btn_BookNowInfo, new RecordItemIndex(2));
             repo.MakeMyTrip.Btn_BookNow.Click();
             Delay.Milliseconds(0);
             
