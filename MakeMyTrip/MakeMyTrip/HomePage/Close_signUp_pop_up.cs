@@ -79,8 +79,8 @@ namespace MakeMyTrip.HomePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Btn_CloseSignUp' at 21;16.", repo.MakeMyTrip.Btn_CloseSignUpInfo, new RecordItemIndex(0));
-            repo.MakeMyTrip.Btn_CloseSignUp.Click("21;16");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.HomePage.Btn_CloseSignUp' at 21;16.", repo.MakeMyTrip.HomePage.Btn_CloseSignUpInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.HomePage.Btn_CloseSignUp.Click("21;16");
             Delay.Milliseconds(0);
             
         }

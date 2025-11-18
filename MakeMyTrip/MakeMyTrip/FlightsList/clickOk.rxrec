@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3ce535a4-0f8f-4c69-881e-206c28c9bd78"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="clickOk"
+	namespace="MakeMyTrip.FlightsList">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="41;13"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="6548dbd4-c4bb-4bef-accf-f7b47cafa144"
+		sx="954"
+		sy="776"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dece6031-1482-4404-a2f9-27d1cff6ad5d"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, fonttag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="fonttag"
+				rect="913,763,84,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Okay, Got it
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						font
+					</attribute>
+					<attribute
+					name="color"
+					type="System.String">
+						#FFFFFF
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//div[#'root']/div/div[2]/div[4]/div/div/div/div[2]/?/?/font[@innertext='Okay, Got it']
+				</path>
+				<robustPath>
+					/dom[@domain='www.makemytrip.com']//div[#'root']//font[@innertext='Okay, Got it']
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="54293cc4-8f1b-4819-b975-e3e6ff4baae9">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="12;8"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a945f538-f889-4467-bee2-4f30fee7d5c8"
+		sx="385"
+		sy="883"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="22c75d9a-ffce-4228-aff0-837de3ced0d9"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="373,875,18,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						radio
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='www.makemytrip.com']//form[#'mainSection_0']/div[1]/div/div[4]/div/div/div[4]/div[3]//input[@type='radio']
+				</path>
+				<robustPath>
+					/dom[@domain='www.makemytrip.com']//form[#'mainSection_0']/div[1]/div/div[4]/div/div/div[4]/div[3]/label/span/input[@type='radio']
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="c7bc493d-a296-4a51-b5a9-6142feab40d6">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABsAGwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDeooop
+iGmp1+6PpUBqdfuj6UAhaZL938afTJfu/jSCWxHWYqK8pWRiuc8+9adVp7be25Op6ikmckl1K8uy
+3jaJMPIww7ensKk00ELJ6ZFMFpIx5AUeuauxRrEgVf8A9dNvQSu3chuVPnQylS6ITkAZIPY4qJjL
+K3CsqmVRuVShZcc571eoqTW5Q2zLdcvIAGG0bWYFfrnH581ERcOdw81c9R8/H/jw/TitSigakLRR
+RVmw01Ov3R9KgNTr90fSgELTZfu06gjNIHqiCipdi/3RRsX+6KVjP2fmRUVLsX+6KNi/3RRYPZ+Z
+FRUuxf7oo2L/AHRRYPZ+ZFRUuxf7oo2L/dFFg9n5kdFFFUaDTU6/dH0qA1Ov3R9KAQtFFZU019Lq
+ktvbTKgRQwDAeg9vepbsa06bm3raxq0Vju2oo2GvoM+y5/8AZaekeqyLlLyAj2A/+Jpc3kX7FfzL
++vkatFUdHuJbm1Z5m3MHIzgDjA9KvU07q5lODhJxYUUUUyQooooAhooopiGmp1+6PpUBqdfuj6UA
+haxnYjXbhVOC6Bc+mdtbNZHlmTXbkKcMIwVPv8tRLodFHaXp/kascaRrtRQB/OqEF2ks6SRRSRBg
+pIcAbg2cEYJ9DVkXaKMTBo27gisoRytHA8M7RMtvbDhQQcsRnn0zVGBa8P8A/Hi//XQ/yFSRXki3
+ssc3+qL7EbH3Tjoag0ZZrZ2t5NjIxkZGHB+VgpyPfirwtEKzrIdyzNuIxjHH/wBalFWRpVkpzckR
+W96fIj8wPLK5bCoBnAJ+gqzBMk8QdM46EEcg+lVo7BoUi8qbEke4biuQQTnkZqSC3kgZFV8p8zSZ
+A+Zj/KmZj45Ga7mQn5VVSB9c0+KVZU3LkckYPUEHFIkW2eSXdneAMY6Yz/jVaWwd5neO5aMMc7Qt
+AE9FFFMQ01Ov3R9KgNTr90fSgELVG50qC5naZ3kDNjIBGOmPSr1FS0nuXCcoO8WYc2kwQXAEnmeR
+IoUSb/8AVvnuOmDwK2LeLyLaKLO7y0C5x1wKWaGOeJopUDowwQaqxpqEAMamCdB9x5GKtj3wDmmk
+lsEpyk7yZI+P7ThA6+TIf/HkqzVW1tpEle4uZFkmcAfKuAg9B36/nxVqgkKKKKACiiigCGiiimIa
+anX7o+lQGp1+6PpQCFoopG7D1NIYtFMk8uNC7AAD2qLz1/59pf8AvigCxRVf7RGPvQyIPVk4FT7F
+/uj8qAFopNi/3R+VGxf7o/KgBaKTYv8AdH5UbF/uj8qAIqKKKYhpqdfuj6VAanX7o+lAIWkbqv1/
+pS0jdV+v9KQyG9/49H/D+dT1Be/8ej/h/Op6AIL3/j0f8P51PUF7/wAej/h/Op6AM+6uXjuzG8xt
+48DY2zIY98mrMt0sTAOkm3IBkA+XmqGo3EovPsu7MUoAIwMj6VBeAC+kiwCFClSeSOnA9qEDNUXk
+ZQHa+TJ5e3AyDSLeeYN0VvNImeGAGD+ZqFY1/tp/Ty9+O2Txn8qybiYWk7wJBA6ocAugJ/OgD//Z
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="5b48a8da-2eff-42c9-8e11-1f4489f71c77"
+	name="MakeMyTripRepository"
+	relativepath="..\MakeMyTripRepository.rxrep">
+		<codegen
+		classname="MakeMyTripRepository"
+		namespace="MakeMyTrip">
+		</codegen>
+		<rootfolder
+		id="fd994926-984c-4c0e-b481-b5d0ff6b74ed"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		clickOk.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

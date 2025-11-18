@@ -79,16 +79,16 @@ namespace MakeMyTrip.FlightsList
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Class='boldFont blackText airlineName') on item 'MakeMyTrip.Txt_fliteredFlights'.", repo.MakeMyTrip.Txt_fliteredFlightsInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.MakeMyTrip.Txt_fliteredFlightsInfo, "Class", "boldFont blackText airlineName");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Class='boldFont blackText airlineName') on item 'MakeMyTrip.HomePage.Txt_fliteredFlights'.", repo.MakeMyTrip.HomePage.Txt_fliteredFlightsInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.MakeMyTrip.HomePage.Txt_fliteredFlightsInfo, "Class", "boldFont blackText airlineName");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (data-test='component-airlineHeading') on item 'MakeMyTrip.Txt_fliteredFlights'.", repo.MakeMyTrip.Txt_fliteredFlightsInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MakeMyTrip.Txt_fliteredFlightsInfo, "data-test", "component-airlineHeading");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (data-test='component-airlineHeading') on item 'MakeMyTrip.HomePage.Txt_fliteredFlights'.", repo.MakeMyTrip.HomePage.Txt_fliteredFlightsInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.MakeMyTrip.HomePage.Txt_fliteredFlightsInfo, "data-test", "component-airlineHeading");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Txt_fliteredFlights' at 19;9.", repo.MakeMyTrip.Txt_fliteredFlightsInfo, new RecordItemIndex(2));
-            repo.MakeMyTrip.Txt_fliteredFlights.Click("19;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.HomePage.Txt_fliteredFlights' at 19;9.", repo.MakeMyTrip.HomePage.Txt_fliteredFlightsInfo, new RecordItemIndex(2));
+            repo.MakeMyTrip.HomePage.Txt_fliteredFlights.Click("19;9");
             Delay.Milliseconds(0);
             
         }

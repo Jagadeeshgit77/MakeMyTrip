@@ -138,8 +138,32 @@
       <UserCode>true</UserCode>
       <id>b8faa66a-c3a9-46a4-ac01-4b0a09e0b5e0</id>
     </Compile>
+    <Compile Include="BookingPage\EnterTravellerDetails.cs">
+      <BoundTo>872294d5-80f3-48ae-a9d6-dfe8b08a1c0a</BoundTo>
+      <DependentUpon>EnterTravellerDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>62be0189-4718-420c-acd3-51f7438af140</id>
+    </Compile>
+    <Compile Include="BookingPage\EnterTravellerDetails.UserCode.cs">
+      <BoundTo>872294d5-80f3-48ae-a9d6-dfe8b08a1c0a</BoundTo>
+      <DependentUpon>EnterTravellerDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b49724be-1740-4708-b7a1-be0fd0bd9078</id>
+    </Compile>
     <Compile Include="CodeModules\ValidatePrices.cs">
       <id>169c39ca-d8ea-43bd-aa06-f972c54bf865</id>
+    </Compile>
+    <Compile Include="FlightsList\clickOk.cs">
+      <BoundTo>686496c0-0ba9-45f0-a196-e0059cdfbbf4</BoundTo>
+      <DependentUpon>clickOk.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7302d42e-5c0a-40c9-b713-b0a0019938a3</id>
+    </Compile>
+    <Compile Include="FlightsList\clickOk.UserCode.cs">
+      <BoundTo>686496c0-0ba9-45f0-a196-e0059cdfbbf4</BoundTo>
+      <DependentUpon>clickOk.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6fa0b157-a5b9-4853-a778-43d6298d026e</id>
     </Compile>
     <Compile Include="FlightsList\Click_on_Book_Now_button_Pop_Up.cs">
       <BoundTo>67b23d0f-9b69-4b0a-b28d-362a7b7bf540</BoundTo>
@@ -291,6 +315,16 @@
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
       <id>af6ac341-992c-4a15-a033-cf60abf68737</id>
       <recordtableid>471c057b-4254-489b-a479-8155def55ca8</recordtableid>
+    </None>
+    <None Include="BookingPage\EnterTravellerDetails.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>872294d5-80f3-48ae-a9d6-dfe8b08a1c0a</id>
+      <recordtableid>ff9b8d11-54a3-4b79-8f35-47e1d19c56e4</recordtableid>
+    </None>
+    <None Include="FlightsList\clickOk.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>686496c0-0ba9-45f0-a196-e0059cdfbbf4</id>
+      <recordtableid>3ce535a4-0f8f-4c69-881e-206c28c9bd78</recordtableid>
     </None>
     <None Include="FlightsList\Click_on_Book_Now_button_Pop_Up.rxrec">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>

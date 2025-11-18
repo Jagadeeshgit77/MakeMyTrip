@@ -47,8 +47,40 @@ namespace MakeMyTrip.CodeModules
             Delay.SpeedFactor = 1.0;
             
             MakeMyTripRepository mmt = new MakeMyTripRepository();
-            string totFare = mmt.MakeMyTrip.BookingPage.Txt_TotalFare.Element.GetAttributeValueText("InnerText");
-            Report.Info(totFare);
+            string Fare = mmt.MakeMyTrip.BookingPage.Txt_TotalFare.Element.GetAttributeValueText("InnerText");
+            Report.Info(Fare);
+            
+            string updFare = Regex.Replace(Fare, "[^0-9]", "");
+            
+            int totFare = int.Parse(updFare);
+            Report.Info(updFare);            
+            
+            mmt.MakeMyTrip.BookingPage.Btn_Apply.Click();
+            
+            string msg = mmt.MakeMyTrip.BookingPage.Txt_CouponApplied.Element.GetAttributeValueText("InnerText");
+            string updMsg = Regex.Replace(msg, "[^0-9]", "");
+            int couponAmt = int.Parse(updMsg);
+            Report.Info(updMsg);
+            
+            mmt.MakeMyTrip.BookingPage.Btn_OkayGotIt.Click();
+            mmt.MakeMyTrip.BookingPage.RdBtn_NoTripSecure.Click();
+            
+            string discAmt = mmt.MakeMyTrip.BookingPage.Txt_TotalFare.Element.GetAttributeValueText("InnerText");
+            string updDiscAmt = Regex.Replace(discAmt, "[^0-9]", "");
+            Report.Info(updDiscAmt);
+            int totAmt = int.Parse(updDiscAmt);
+            
+            int discount = totFare - couponAmt;
+            
+            Validate.AreEqual(discount,totAmt);
+            
+            
+            
+            
+            
+            
+            
+            
         }
     }
 }

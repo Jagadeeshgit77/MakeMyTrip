@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace MakeMyTrip.HomePage
+namespace MakeMyTrip.BookingPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ClickOnSearch recording.
+    ///The EnterTravellerDetails recording.
     /// </summary>
-    [TestModule("98983af6-2cdd-4095-955f-2a9206a8a447", ModuleType.Recording, 1)]
-    public partial class ClickOnSearch : ITestModule
+    [TestModule("ff9b8d11-54a3-4b79-8f35-47e1d19c56e4", ModuleType.Recording, 1)]
+    public partial class EnterTravellerDetails : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::MakeMyTrip.MakeMyTripRepository repository.
         /// </summary>
         public static global::MakeMyTrip.MakeMyTripRepository repo = global::MakeMyTrip.MakeMyTripRepository.Instance;
 
-        static ClickOnSearch instance = new ClickOnSearch();
+        static EnterTravellerDetails instance = new EnterTravellerDetails();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ClickOnSearch()
+        public EnterTravellerDetails()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ClickOnSearch Instance
+        public static EnterTravellerDetails Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,28 @@ namespace MakeMyTrip.HomePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.HomePage.Search' at 98;29.", repo.MakeMyTrip.HomePage.SearchInfo, new RecordItemIndex(0));
-            repo.MakeMyTrip.HomePage.Search.Click("98;29");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.ButtonTagPlusADDNEWADULT' at 46;9.", repo.MakeMyTrip.ButtonTagPlusADDNEWADULTInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.ButtonTagPlusADDNEWADULT.Click("46;9");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.TxtField_FirstName' at 97;25.", repo.MakeMyTrip.BookingPage.TxtField_FirstNameInfo, new RecordItemIndex(1));
+            repo.MakeMyTrip.BookingPage.TxtField_FirstName.Click("97;25");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Text' at 107;22.", repo.MakeMyTrip.TextInfo, new RecordItemIndex(2));
+            repo.MakeMyTrip.Text.Click("107;22");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Btn_Gender' at 106;28.", repo.MakeMyTrip.BookingPage.Btn_GenderInfo, new RecordItemIndex(3));
+            repo.MakeMyTrip.BookingPage.Btn_Gender.Click("106;28");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Chkbox_Adult1' at 1;12.", repo.MakeMyTrip.BookingPage.Chkbox_Adult1Info, new RecordItemIndex(4));
+            repo.MakeMyTrip.BookingPage.Chkbox_Adult1.Click("1;12");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.ButtonTagPlusADDNEWADULT' at 68;5.", repo.MakeMyTrip.ButtonTagPlusADDNEWADULTInfo, new RecordItemIndex(5));
+            repo.MakeMyTrip.ButtonTagPlusADDNEWADULT.Click("68;5");
             Delay.Milliseconds(0);
             
         }

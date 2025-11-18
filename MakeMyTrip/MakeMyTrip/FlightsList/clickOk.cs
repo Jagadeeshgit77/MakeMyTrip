@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace MakeMyTrip.HomePage
+namespace MakeMyTrip.FlightsList
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ClickOnSearch recording.
+    ///The clickOk recording.
     /// </summary>
-    [TestModule("98983af6-2cdd-4095-955f-2a9206a8a447", ModuleType.Recording, 1)]
-    public partial class ClickOnSearch : ITestModule
+    [TestModule("3ce535a4-0f8f-4c69-881e-206c28c9bd78", ModuleType.Recording, 1)]
+    public partial class clickOk : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::MakeMyTrip.MakeMyTripRepository repository.
         /// </summary>
         public static global::MakeMyTrip.MakeMyTripRepository repo = global::MakeMyTrip.MakeMyTripRepository.Instance;
 
-        static ClickOnSearch instance = new ClickOnSearch();
+        static clickOk instance = new clickOk();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ClickOnSearch()
+        public clickOk()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ClickOnSearch Instance
+        public static clickOk Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,12 @@ namespace MakeMyTrip.HomePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.HomePage.Search' at 98;29.", repo.MakeMyTrip.HomePage.SearchInfo, new RecordItemIndex(0));
-            repo.MakeMyTrip.HomePage.Search.Click("98;29");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Btn_OkayGotIt' at 41;13.", repo.MakeMyTrip.BookingPage.Btn_OkayGotItInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.BookingPage.Btn_OkayGotIt.Click("41;13");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.RdBtn_NoTripSecure' at 12;8.", repo.MakeMyTrip.BookingPage.RdBtn_NoTripSecureInfo, new RecordItemIndex(1));
+            repo.MakeMyTrip.BookingPage.RdBtn_NoTripSecure.Click("12;8");
             Delay.Milliseconds(0);
             
         }

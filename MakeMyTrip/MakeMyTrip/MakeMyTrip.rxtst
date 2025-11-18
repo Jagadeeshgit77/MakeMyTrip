@@ -73,12 +73,22 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4b79bdde-1336-4ab4-81cb-5310923cc3d0"
+			name="ValidatePrices"
+			ref="b3af136b-8e34-4543-919d-a26808be0a8c"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="50b0faf6-182b-43dd-a5db-31e49e53eb1e"
 			name="CloseBrowser"
 			ref="26a78c26-30f6-436c-a080-ad27b19844ec"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="68d0b179-4c96-46dc-aaeb-a044aa96ff33"
+			name="TC06_Update_Traveller_details">
+			</testcase>
 			<testcase
 			id="81e04f73-b38b-4660-bf3f-d3e49e59400e"
 			name="TC02_Select_source_destination_cities_and_click_on_Search_button">
@@ -124,7 +134,7 @@
 			</testcase>
 			<testcase
 			id="eed06f52-12d8-46e6-88cc-a30ed6802031"
-			name="TC05_">
+			name="TC05_Apply_Coupon_and_Verify_total_price">
 			</testcase>
 			<testmodule
 			id="f0eb073a-215e-4ff2-b60a-82e4cbf60caa"
@@ -197,7 +207,15 @@
 					</testcase>
 					<testcase
 					id="eed06f52-12d8-46e6-88cc-a30ed6802031"
-					name="TC05_">
+					name="TC05_Apply_Coupon_and_Verify_total_price">
+						<testmodule
+						id="4b79bdde-1336-4ab4-81cb-5310923cc3d0"
+						name="ValidatePrices">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="68d0b179-4c96-46dc-aaeb-a044aa96ff33"
+					name="TC06_Update_Traveller_details">
 					</testcase>
 					<testcase
 					id="8ff67c3d-c8b5-4249-b224-dbaa07eb5135"
@@ -217,6 +235,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="68d0b179-4c96-46dc-aaeb-a044aa96ff33">
+			</testcontainer>
 			<testcontainer
 			id="81e04f73-b38b-4660-bf3f-d3e49e59400e">
 			</testcontainer>
