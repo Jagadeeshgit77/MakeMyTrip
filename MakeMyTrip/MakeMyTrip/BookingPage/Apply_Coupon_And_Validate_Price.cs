@@ -79,24 +79,16 @@ namespace MakeMyTrip.BookingPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.SpanTag11411' at 36;12.", repo.MakeMyTrip.FlightList.SpanTag11411Info, new RecordItemIndex(0));
-            repo.MakeMyTrip.FlightList.SpanTag11411.Click("36;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.Txt_Price' at 36;12.", repo.MakeMyTrip.FlightList.Txt_PriceInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.FlightList.Txt_Price.Click("36;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.Apply' at 19;14.", repo.MakeMyTrip.FlightList.ApplyInfo, new RecordItemIndex(1));
-            repo.MakeMyTrip.FlightList.Apply.Click("19;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.Btn_Apply' at 19;14.", repo.MakeMyTrip.FlightList.Btn_ApplyInfo, new RecordItemIndex(1));
+            repo.MakeMyTrip.FlightList.Btn_Apply.Click("19;14");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -240 units.", new RecordItemIndex(2));
-            Mouse.ScrollWheel(-240);
-            Delay.Milliseconds(300);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by 240 units.", new RecordItemIndex(3));
-            Mouse.ScrollWheel(240);
-            Delay.Milliseconds(300);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.CouponV2OverlayWrapper' at 320;300.", repo.MakeMyTrip.FlightList.CouponV2OverlayWrapperInfo, new RecordItemIndex(4));
-            repo.MakeMyTrip.FlightList.CouponV2OverlayWrapper.Click("320;300");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.Txt_CouponApplied' at 181;25.", repo.MakeMyTrip.FlightList.Txt_CouponAppliedInfo, new RecordItemIndex(2));
+            repo.MakeMyTrip.FlightList.Txt_CouponApplied.Click("181;25");
             Delay.Milliseconds(0);
             
         }
