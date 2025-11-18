@@ -79,8 +79,8 @@ namespace MakeMyTrip.FlightsList
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'MakeMyTrip.Btn_BookNow'", repo.MakeMyTrip.Btn_BookNowInfo, new ActionTimeout(5000), new RecordItemIndex(1));
             repo.MakeMyTrip.Btn_BookNowInfo.WaitForExists(5000);

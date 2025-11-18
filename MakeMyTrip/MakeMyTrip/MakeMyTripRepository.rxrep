@@ -162,27 +162,6 @@ name="MakeMyTripRepository">
 					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']//?//div[@class='dateInnerCell']
 				</item>
 				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="c618256d-efc0-4dae-979a-ac52f7c75554"
-				name="SpanTag8"
-				refimgid="e2560e1d-0f5e-4c69-bf58-b9eb6e8dfd6e"
-				refpath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[3]/label/p[1]/span[@innertext='8']"
-				robustPath="/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']/div[3]/label/p[1]/span[@innertext='8']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="78b18a5b-01bc-4cf5-ba18-8d04784079c7"
-				name="DateInnerCell1"
-				refimgid="4add7149-c6b5-42d4-ae98-cf7a030e75a3"
-				robustPath="/dom[@domain='www.makemytrip.com']//div[#'top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[2]/div[7]"
-				searchtimeout="30000ms">
-					/dom[@domain='www.makemytrip.com']//div[@class='fsw_inner returnPersuasion']//?//div[@aria-label='Sat Nov08 2025']
-				</item>
-				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="d3172319-054b-440b-8dc0-cdf09b2d028e"
@@ -200,7 +179,7 @@ name="MakeMyTripRepository">
 			capname="divtag"
 			id="6ec815fc-0d4f-4c0d-81b8-b426038b6d6c"
 			isrooted="True"
-			name="FlightList"
+			name="FlightListPage"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -234,6 +213,17 @@ name="MakeMyTripRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='www.makemytrip.com']//div[#'root']//button/span[@innertext='VIEW PRICES']
 				</item>
+				<basepath>
+					/dom[@domain='www.makemytrip.com']//div[#'root']
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="38ddbdb3-d4eb-4561-970e-1c7966b07d14"
+			isrooted="True"
+			name="BookingPage"
+			searchtimeout="30000ms"
+			usecache="False">
 				<item
 				addcaps="unknown,webelement,atag"
 				capname="atag"
@@ -243,17 +233,6 @@ name="MakeMyTripRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain='www.makemytrip.com']//div[#'root']//?//a[@innertext='Okay, Got it']
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="dd1aebcf-071a-46ae-88df-1f6356ea040b"
-				name="Txt_Price"
-				refimgid="f282dce2-590c-48ea-811f-54a87cc35066"
-				refpath="/dom[@domain='www.makemytrip.com' and @caption='MakeMyTrip' and @page='']//div[#'root']/div/div[2]/div[2]/div/div/div[2]/div[1]/div/section/div[3]/p/span[@innertext='₹ 11,411']"
-				robustPath="/dom[@domain='www.makemytrip.com']//div[#'root']//span[@innertext='₹ 11,411']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.makemytrip.com']//div[#'root']/div/div[2]/div[2]/div//section/div[3]/?/?/span[@innertext='₹ 11,411']
 				</item>
 				<item
 				addcaps="unknown,webelement,btag"
@@ -274,6 +253,16 @@ name="MakeMyTripRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain='www.makemytrip.com']//div[#'root']//?//p[@class='fontSize22 blackFont']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="aa2d84a4-4a4b-4861-aaf0-5e882097b110"
+				name="Txt_TotalFare"
+				refimgid="cabf9c8d-e251-4988-88b8-3ec15aab4cd2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'root']//?//span[@data-test='component-tot_fare']
 				</item>
 				<basepath>
 					/dom[@domain='www.makemytrip.com']//div[#'root']

@@ -122,6 +122,10 @@
 			id="c1cfe7f6-d643-4c9f-aa3c-eebe79857068"
 			name="TC04_Click_on_View_Prices_button_and_navigate_to_booking_page">
 			</testcase>
+			<testcase
+			id="eed06f52-12d8-46e6-88cc-a30ed6802031"
+			name="TC05_">
+			</testcase>
 			<testmodule
 			id="f0eb073a-215e-4ff2-b60a-82e4cbf60caa"
 			name="OpenBrowser"
@@ -192,6 +196,10 @@
 						</testmodule>
 					</testcase>
 					<testcase
+					id="eed06f52-12d8-46e6-88cc-a30ed6802031"
+					name="TC05_">
+					</testcase>
+					<testcase
 					id="8ff67c3d-c8b5-4249-b224-dbaa07eb5135"
 					name="TC03_Close_Make_my_trip_Application">
 						<testmodule
@@ -226,6 +234,9 @@
 			</testcontainer>
 			<testcontainer
 			id="c1cfe7f6-d643-4c9f-aa3c-eebe79857068">
+			</testcontainer>
+			<testcontainer
+			id="eed06f52-12d8-46e6-88cc-a30ed6802031">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

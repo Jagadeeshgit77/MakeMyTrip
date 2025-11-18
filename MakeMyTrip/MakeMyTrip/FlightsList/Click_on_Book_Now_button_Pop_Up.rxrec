@@ -26,7 +26,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<explicitdelayitem
-		duration="2000ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -110,7 +110,6 @@ mode="Global">
 					/dom[@domain='www.makemytrip.com']//?/button[@innertext='BOOK NOW']
 				</path>
 				<robustPath>
-					/dom[@domain='www.makemytrip.com']//div[#'ffWrapper']//button[@innertext='BOOK NOW']
 				</robustPath>
 			</info>
 		</WaitForRecordItem>

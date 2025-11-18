@@ -46,8 +46,9 @@ namespace MakeMyTrip.CodeModules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             
-//            MakeMyTripRepository mmt = new MakeMyTripRepository();
-//            string couponApplied = mmt.MakeMyTrip.
+            MakeMyTripRepository mmt = new MakeMyTripRepository();
+            string totFare = mmt.MakeMyTrip.BookingPage.Txt_TotalFare.Element.GetAttributeValueText("InnerText");
+            Report.Info(totFare);
         }
     }
 }

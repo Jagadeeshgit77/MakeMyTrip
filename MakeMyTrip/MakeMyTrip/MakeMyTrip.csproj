@@ -225,18 +225,6 @@
       <id>1a200041-1879-4b8e-ae76-e1c05eecf084</id>
       <BoundTo>cff7d8f4-6e10-4c1d-b571-7588ef14a599</BoundTo>
     </Compile>
-    <Compile Include="HomePage\DepartureDate.cs">
-      <BoundTo>44b08df5-c61b-4664-a272-e6a40fef6068</BoundTo>
-      <DependentUpon>DepartureDate.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>48a6bf85-e58c-4fc5-8613-5f4c4f1104ee</id>
-    </Compile>
-    <Compile Include="HomePage\DepartureDate.UserCode.cs">
-      <BoundTo>44b08df5-c61b-4664-a272-e6a40fef6068</BoundTo>
-      <DependentUpon>DepartureDate.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>5631b9e6-4c37-4805-a38b-d829d3dc394c</id>
-    </Compile>
     <Compile Include="HomePage\FromAndToCity.cs">
       <BoundTo>c363f24d-1915-48e7-83df-d1252c4713e6</BoundTo>
       <DependentUpon>FromAndToCity.rxrec</DependentUpon>
@@ -338,11 +326,6 @@
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
       <id>cff7d8f4-6e10-4c1d-b571-7588ef14a599</id>
       <recordtableid>71151cdb-565c-4f07-bf02-4ea3707c41e9</recordtableid>
-    </None>
-    <None Include="HomePage\DepartureDate.rxrec">
-      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
-      <id>44b08df5-c61b-4664-a272-e6a40fef6068</id>
-      <recordtableid>9890b05c-f131-4a95-a06d-10c761fb1787</recordtableid>
     </None>
     <None Include="HomePage\FromAndToCity.rxrec">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>

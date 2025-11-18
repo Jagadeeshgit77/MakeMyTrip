@@ -79,16 +79,12 @@ namespace MakeMyTrip.BookingPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.Txt_Price' at 36;12.", repo.MakeMyTrip.FlightList.Txt_PriceInfo, new RecordItemIndex(0));
-            repo.MakeMyTrip.FlightList.Txt_Price.Click("36;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Btn_Apply' at 19;14.", repo.MakeMyTrip.BookingPage.Btn_ApplyInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.BookingPage.Btn_Apply.Click("19;14");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.Btn_Apply' at 19;14.", repo.MakeMyTrip.FlightList.Btn_ApplyInfo, new RecordItemIndex(1));
-            repo.MakeMyTrip.FlightList.Btn_Apply.Click("19;14");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.Txt_CouponApplied' at 181;25.", repo.MakeMyTrip.FlightList.Txt_CouponAppliedInfo, new RecordItemIndex(2));
-            repo.MakeMyTrip.FlightList.Txt_CouponApplied.Click("181;25");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Txt_CouponApplied' at 181;25.", repo.MakeMyTrip.BookingPage.Txt_CouponAppliedInfo, new RecordItemIndex(1));
+            repo.MakeMyTrip.BookingPage.Txt_CouponApplied.Click("181;25");
             Delay.Milliseconds(0);
             
         }

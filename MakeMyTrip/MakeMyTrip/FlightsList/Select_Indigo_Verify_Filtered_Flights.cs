@@ -92,7 +92,7 @@ namespace MakeMyTrip.FlightsList
 
             Init();
 
-            selectChkBoxAndGetTxt(repo.MakeMyTrip.FlightList.ChxBox_FlightInfo);
+            selectChkBoxAndGetTxt(repo.MakeMyTrip.FlightListPage.ChxBox_FlightInfo);
             Delay.Milliseconds(0);
             
         }

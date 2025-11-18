@@ -30,125 +30,6 @@ mode="Global">
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="36;12"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="ae44d8a5-e034-4e91-a578-fbae9ffa56f4"
-		sx="1497"
-		sy="367"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="dd1aebcf-071a-46ae-88df-1f6356ea040b"
-			sourcename="Recorder">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="1461,355,64,24"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						fontSize16 blackFont
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						₹ 11,411
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						blackFont fontSize16
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-test"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='www.makemytrip.com']//div[#'root']/div/div[2]/div[2]/div//section/div[3]/?/?/span[@innertext='₹ 11,411']
-				</path>
-				<robustPath>
-					/dom[@domain='www.makemytrip.com']//div[#'root']//span[@innertext='₹ 11,411']
-				</robustPath>
-			</info>
-			<helperscreenshot
-			guid="628e4ae8-5abb-4182-9a83-8fcaf8f4bc29">
-				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
-			</helperscreenshot>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
 		loc="19;14"
 		movetime="300ms"
 		optional="False"
@@ -201,7 +82,6 @@ H+laEnas/Uf+Wf4/0piLUP8AqI/90fyp9Mh/1Ef+6P5U+gAooooAKKKKACiiigD/2Q==
 					/dom[@domain='www.makemytrip.com']//div[#'root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div/section/div/div[3]/div/div/div[1]/div/div/div/div[2]//b[@innertext='Apply']
 				</path>
 				<robustPath>
-					/dom[@domain='www.makemytrip.com']//div[#'root']//b[@innertext='Apply']
 				</robustPath>
 			</info>
 			<helperscreenshot
@@ -334,7 +214,6 @@ XORnPc1ZopM00rKxnKTlJyfU/9k=
 					/dom[@domain='www.makemytrip.com']//div[#'root']/div/div[2]/div[4]//p[@innertext&gt;'You''ve saved  &#8377; 605 on your']
 				</path>
 				<robustPath>
-					/dom[@domain='www.makemytrip.com']//div[#'root']//p[@innertext&gt;'You''ve saved  &#8377; 605 on your']
 				</robustPath>
 			</info>
 			<helperscreenshot

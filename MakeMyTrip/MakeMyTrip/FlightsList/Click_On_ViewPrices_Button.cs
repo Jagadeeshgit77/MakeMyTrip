@@ -79,8 +79,8 @@ namespace MakeMyTrip.FlightsList
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.Btn_ViewPrices' at Center.", repo.MakeMyTrip.FlightList.Btn_ViewPricesInfo, new RecordItemIndex(0));
-            repo.MakeMyTrip.FlightList.Btn_ViewPrices.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightListPage.Btn_ViewPrices' at Center.", repo.MakeMyTrip.FlightListPage.Btn_ViewPricesInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.FlightListPage.Btn_ViewPrices.Click();
             Delay.Milliseconds(0);
             
         }

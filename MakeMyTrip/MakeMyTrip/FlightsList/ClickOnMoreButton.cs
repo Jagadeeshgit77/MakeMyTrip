@@ -79,8 +79,8 @@ namespace MakeMyTrip.FlightsList
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightList.LinkTxt_More' at Center.", repo.MakeMyTrip.FlightList.LinkTxt_MoreInfo, new RecordItemIndex(0));
-            repo.MakeMyTrip.FlightList.LinkTxt_More.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.FlightListPage.LinkTxt_More' at Center.", repo.MakeMyTrip.FlightListPage.LinkTxt_MoreInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.FlightListPage.LinkTxt_More.Click();
             Delay.Milliseconds(0);
             
         }
