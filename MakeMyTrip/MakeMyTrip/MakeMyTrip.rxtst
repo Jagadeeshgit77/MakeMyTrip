@@ -79,7 +79,6 @@
 			type="UserCode">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="50b0faf6-182b-43dd-a5db-31e49e53eb1e"
 			name="CloseBrowser"
 			ref="26a78c26-30f6-436c-a080-ad27b19844ec"
@@ -108,7 +107,7 @@
 			</testmodule>
 			<testcase
 			id="8ff67c3d-c8b5-4249-b224-dbaa07eb5135"
-			name="TC03_Close_Make_my_trip_Application">
+			name="TC07_Close_Make_my_trip_Application">
 			</testcase>
 			<testcase
 			id="94b161d0-17be-46c3-a7d8-97b5c7264d14"
@@ -125,6 +124,12 @@
 			id="9f50df01-7f24-4e23-b737-a739e0b400e6"
 			name="TC03_Select_Indigo_flight_and_Verify_flights_are_filtered">
 			</testcase>
+			<testmodule
+			id="a29eaab6-9591-4a90-a4c8-eacbae326e3f"
+			name="CloseBrowser"
+			ref="26a78c26-30f6-436c-a080-ad27b19844ec"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="c00ce0ac-9016-4e88-aea4-f43bd48841ad"
 			name="TC01_Open_Make_my_trip_Application">
@@ -250,9 +255,13 @@
 					</testcase>
 					<testcase
 					id="8ff67c3d-c8b5-4249-b224-dbaa07eb5135"
-					name="TC03_Close_Make_my_trip_Application">
+					name="TC07_Close_Make_my_trip_Application">
 						<testmodule
 						id="50b0faf6-182b-43dd-a5db-31e49e53eb1e"
+						name="CloseBrowser">
+						</testmodule>
+						<testmodule
+						id="a29eaab6-9591-4a90-a4c8-eacbae326e3f"
 						name="CloseBrowser">
 						</testmodule>
 					</testcase>
