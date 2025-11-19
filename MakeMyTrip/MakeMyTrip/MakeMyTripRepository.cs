@@ -61,6 +61,18 @@ namespace MakeMyTrip
             set { _date = value; }
         }
 
+        string _Gender = "MALE";
+
+        /// <summary>
+        /// Gets or sets the value of variable Gender.
+        /// </summary>
+        [TestVariable("d162fbba-89be-4ffc-b1c0-23e8a69110cd")]
+        public string Gender
+        {
+            get { return _Gender; }
+            set { _Gender = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -101,8 +113,7 @@ namespace MakeMyTrip
             MakeMyTripRepositoryFolders.OneWayJourneyFolder _onewayjourney;
             MakeMyTripRepositoryFolders.FlightListPageFolder _flightlistpage;
             MakeMyTripRepositoryFolders.BookingPageFolder _bookingpage;
-            RepoItemInfo _buttontagplusaddnewadultInfo;
-            RepoItemInfo _textInfo;
+            MakeMyTripRepositoryFolders.TravellerDetailsFolder _travellerdetails;
 
             /// <summary>
             /// Creates a new MakeMyTrip  folder.
@@ -114,8 +125,7 @@ namespace MakeMyTrip
                 _onewayjourney = new MakeMyTripRepositoryFolders.OneWayJourneyFolder(this);
                 _flightlistpage = new MakeMyTripRepositoryFolders.FlightListPageFolder(this);
                 _bookingpage = new MakeMyTripRepositoryFolders.BookingPageFolder(this);
-                _buttontagplusaddnewadultInfo = new RepoItemInfo(this, "ButtonTagPlusADDNEWADULT", ".//div[#'wrapper_ADULT']//button[@innertext='+ ADD NEW ADULT']", ".//div[#'wrapper_ADULT']//button[@innertext='+ ADD NEW ADULT']", 30000, null, "f9f2a086-804d-4e4e-9a8c-fbaadf4e92fc");
-                _textInfo = new RepoItemInfo(this, "Text", ".//div[#'wrapper_ADULT']/div[4]/div[2]/div[2]/div/div/div[1]/div[2]/div/input[@type='text']", ".//div[#'wrapper_ADULT']/div[4]/div[2]/div[2]/div/div/div[1]/div[2]/div/input[@type='text']", 30000, null, "af88e02a-6962-4b08-a7db-6d15ed16c43b");
+                _travellerdetails = new MakeMyTripRepositoryFolders.TravellerDetailsFolder(this);
             }
 
             /// <summary>
@@ -139,54 +149,6 @@ namespace MakeMyTrip
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTagPlusADDNEWADULT item.
-            /// </summary>
-            [RepositoryItem("f9f2a086-804d-4e4e-9a8c-fbaadf4e92fc")]
-            public virtual Ranorex.ButtonTag ButtonTagPlusADDNEWADULT
-            {
-                get
-                {
-                    return _buttontagplusaddnewadultInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTagPlusADDNEWADULT item info.
-            /// </summary>
-            [RepositoryItemInfo("f9f2a086-804d-4e4e-9a8c-fbaadf4e92fc")]
-            public virtual RepoItemInfo ButtonTagPlusADDNEWADULTInfo
-            {
-                get
-                {
-                    return _buttontagplusaddnewadultInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Text item.
-            /// </summary>
-            [RepositoryItem("af88e02a-6962-4b08-a7db-6d15ed16c43b")]
-            public virtual Ranorex.InputTag Text
-            {
-                get
-                {
-                    return _textInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Text item info.
-            /// </summary>
-            [RepositoryItemInfo("af88e02a-6962-4b08-a7db-6d15ed16c43b")]
-            public virtual RepoItemInfo TextInfo
-            {
-                get
-                {
-                    return _textInfo;
                 }
             }
 
@@ -224,6 +186,15 @@ namespace MakeMyTrip
             public virtual MakeMyTripRepositoryFolders.BookingPageFolder BookingPage
             {
                 get { return _bookingpage; }
+            }
+
+            /// <summary>
+            /// The TravellerDetails folder.
+            /// </summary>
+            [RepositoryFolder("c797f896-7830-4640-b4d8-fe906f0d49a1")]
+            public virtual MakeMyTripRepositoryFolders.TravellerDetailsFolder TravellerDetails
+            {
+                get { return _travellerdetails; }
             }
         }
 
@@ -642,6 +613,7 @@ namespace MakeMyTrip
             RepoItemInfo _chxbox_flightInfo;
             RepoItemInfo _linktxt_moreInfo;
             RepoItemInfo _btn_viewpricesInfo;
+            Txt_FirstNameInfoClass _txt_firstnameInfo;
 
             /// <summary>
             /// Creates a new FlightListPage  folder.
@@ -652,6 +624,42 @@ namespace MakeMyTrip
                 _chxbox_flightInfo = new RepoItemInfo(this, "ChxBox_Flight", "?//p[@innertext=' IndiGo   ' and @safeclass='checkboxTitle']", "", 30000, null, "a6a3d68b-232f-406a-919c-ad23978874ca");
                 _linktxt_moreInfo = new RepoItemInfo(this, "LinkTxt_More", "*/p/span[@class='linkText pointer']", ".//span[@innertext='+ 2 more']", 30000, null, "349c5a25-fb6c-46f5-8fe3-9e22b916bf24");
                 _btn_viewpricesInfo = new RepoItemInfo(this, "Btn_ViewPrices", ".//button/span[@innertext='VIEW PRICES']", "", 30000, null, "9678e447-0922-4cad-ac15-34e721b79eb9");
+                _txt_firstnameInfo = new Txt_FirstNameInfoClass(this);
+            }
+
+            /// <summary>
+            /// The Txt_FirstNameInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("42e92f8b-a569-409a-86a0-b5fae6cb0891")]
+            public class Txt_FirstNameInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// Txt_FirstNameInfoClass class constructor.
+                /// </summary>
+                public Txt_FirstNameInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "Txt_FirstName", ".//input[@type='text']", 30000, null, "42e92f8b-a569-409a-86a0-b5fae6cb0891")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("40ca5642-beee-4017-aca9-7715a21a6742")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("40ca5642-beee-4017-aca9-7715a21a6742");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("40ca5642-beee-4017-aca9-7715a21a6742")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("40ca5642-beee-4017-aca9-7715a21a6742", cropRect);
+                }
             }
 
             /// <summary>
@@ -749,6 +757,30 @@ namespace MakeMyTrip
                     return _btn_viewpricesInfo;
                 }
             }
+
+            /// <summary>
+            /// The Txt_FirstName item.
+            /// </summary>
+            [RepositoryItem("42e92f8b-a569-409a-86a0-b5fae6cb0891")]
+            public virtual Ranorex.InputTag Txt_FirstName
+            {
+                get
+                {
+                    return _txt_firstnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Txt_FirstName item info.
+            /// </summary>
+            [RepositoryItemInfo("42e92f8b-a569-409a-86a0-b5fae6cb0891")]
+            public virtual Txt_FirstNameInfoClass Txt_FirstNameInfo
+            {
+                get
+                {
+                    return _txt_firstnameInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -762,11 +794,8 @@ namespace MakeMyTrip
             RepoItemInfo _txt_totalfareInfo;
             RepoItemInfo _btn_okaygotitInfo;
             RepoItemInfo _rdbtn_notripsecureInfo;
-            RepoItemInfo _txtfield_firstnameInfo;
             RepoItemInfo _btn_genderInfo;
-            RepoItemInfo _chkbox_adult1Info;
-            RepoItemInfo _copy_of_txtfield_firstnameInfo;
-            RepoItemInfo _copy_of_copy_of_txtfield_firstnameInfo;
+            RepoItemInfo _chkbox_adultInfo;
 
             /// <summary>
             /// Creates a new BookingPage  folder.
@@ -779,11 +808,8 @@ namespace MakeMyTrip
                 _txt_totalfareInfo = new RepoItemInfo(this, "Txt_TotalFare", ".//?//span[@data-test='component-tot_fare']", "", 30000, null, "aa2d84a4-4a4b-4861-aaf0-5e882097b110");
                 _btn_okaygotitInfo = new RepoItemInfo(this, "Btn_OkayGotIt", ".//?/font[@innertext='Okay, Got it']", "", 30000, null, "dece6031-1482-4404-a2f9-27d1cff6ad5d");
                 _rdbtn_notripsecureInfo = new RepoItemInfo(this, "RdBtn_NoTripSecure", "?//span[@innertext>' I will book without trip']", ".//span[@innertext>' I will book without trip']", 30000, null, "22c75d9a-ffce-4228-aff0-837de3ced0d9");
-                _txtfield_firstnameInfo = new RepoItemInfo(this, "TxtField_FirstName", "?/input[@placeholder='First & Middle Name']", "div[4]/div[3]/div[2]/div/div/div[1]/div[1]/div/input[@type='text']", 30000, null, "91f83c43-45db-408a-826e-257505ef7dc5");
-                _btn_genderInfo = new RepoItemInfo(this, "Btn_Gender", ".//span[@innertext='MALE']", "", 30000, null, "f1b45b9c-8d33-4458-8d0b-664a6dc2bce6");
-                _chkbox_adult1Info = new RepoItemInfo(this, "Chkbox_Adult1", "?//span[@innertext='ADULT  1']", ".//span[@innertext='ADULT  1']", 30000, null, "f2cd6dc6-fcd1-4a44-a570-61768fcc7f3d");
-                _copy_of_txtfield_firstnameInfo = new RepoItemInfo(this, "Copy_of_TxtField_FirstName", "?//?//div[@id='wrapper_ADULT']/?/input[@type='text' and @placeholder='First & Middle Name']", ".//input[@type='text']", 30000, null, "d7168dc3-64eb-460c-8b10-0aa83f07bdf1");
-                _copy_of_copy_of_txtfield_firstnameInfo = new RepoItemInfo(this, "Copy_of_Copy_of_TxtField_FirstName", "?//?//div[@id='wrapper_ADULT']/?/input[@type='text' and @placeholder='First & Middle Name']", ".//input[@type='text']", 30000, null, "c293d548-7fca-452b-9716-2260c2cf83d5");
+                _btn_genderInfo = new RepoItemInfo(this, "Btn_Gender", ".//span[@innertext=$Gender]", "", 30000, null, "f1b45b9c-8d33-4458-8d0b-664a6dc2bce6");
+                _chkbox_adultInfo = new RepoItemInfo(this, "Chkbox_Adult", ".//?//div[@id='wrapper_ADULT']//?//input[@type='checkbox' and @checked='True']", "", 30000, null, "31d443d0-1002-4f01-9b55-37dbccfb96b0");
             }
 
             /// <summary>
@@ -931,30 +957,6 @@ namespace MakeMyTrip
             }
 
             /// <summary>
-            /// The TxtField_FirstName item.
-            /// </summary>
-            [RepositoryItem("91f83c43-45db-408a-826e-257505ef7dc5")]
-            public virtual Ranorex.InputTag TxtField_FirstName
-            {
-                get
-                {
-                    return _txtfield_firstnameInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TxtField_FirstName item info.
-            /// </summary>
-            [RepositoryItemInfo("91f83c43-45db-408a-826e-257505ef7dc5")]
-            public virtual RepoItemInfo TxtField_FirstNameInfo
-            {
-                get
-                {
-                    return _txtfield_firstnameInfo;
-                }
-            }
-
-            /// <summary>
             /// The Btn_Gender item.
             /// </summary>
             [RepositoryItem("f1b45b9c-8d33-4458-8d0b-664a6dc2bce6")]
@@ -979,74 +981,179 @@ namespace MakeMyTrip
             }
 
             /// <summary>
-            /// The Chkbox_Adult1 item.
+            /// The Chkbox_Adult item.
             /// </summary>
-            [RepositoryItem("f2cd6dc6-fcd1-4a44-a570-61768fcc7f3d")]
-            public virtual Ranorex.SpanTag Chkbox_Adult1
+            [RepositoryItem("31d443d0-1002-4f01-9b55-37dbccfb96b0")]
+            public virtual Ranorex.InputTag Chkbox_Adult
             {
                 get
                 {
-                    return _chkbox_adult1Info.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _chkbox_adultInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Chkbox_Adult1 item info.
+            /// The Chkbox_Adult item info.
             /// </summary>
-            [RepositoryItemInfo("f2cd6dc6-fcd1-4a44-a570-61768fcc7f3d")]
-            public virtual RepoItemInfo Chkbox_Adult1Info
+            [RepositoryItemInfo("31d443d0-1002-4f01-9b55-37dbccfb96b0")]
+            public virtual RepoItemInfo Chkbox_AdultInfo
             {
                 get
                 {
-                    return _chkbox_adult1Info;
+                    return _chkbox_adultInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TravellerDetailsFolder folder.
+        /// </summary>
+        [RepositoryFolder("c797f896-7830-4640-b4d8-fe906f0d49a1")]
+        public partial class TravellerDetailsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _btn_addnewadultInfo;
+            RepoItemInfo _txtfield_firstnameInfo;
+            TxtField_LastNameInfoClass _txtfield_lastnameInfo;
+
+            /// <summary>
+            /// Creates a new TravellerDetails  folder.
+            /// </summary>
+            public TravellerDetailsFolder(RepoGenBaseFolder parentFolder) :
+                    base("TravellerDetails", ".//div[#'wrapper_ADULT']", parentFolder, 30000, null, false, "c797f896-7830-4640-b4d8-fe906f0d49a1", "")
+            {
+                _btn_addnewadultInfo = new RepoItemInfo(this, "Btn_AddNewAdult", ".//button[@class='addTravellerBtn']", "", 30000, null, "f9f2a086-804d-4e4e-9a8c-fbaadf4e92fc");
+                _txtfield_firstnameInfo = new RepoItemInfo(this, "TxtField_FirstName", ".//?//input[@placeholder='First & Middle Name']", "", 30000, null, "41ce0521-1022-4a2f-99f3-31173411759e");
+                _txtfield_lastnameInfo = new TxtField_LastNameInfoClass(this);
+            }
+
+            /// <summary>
+            /// The TxtField_LastNameInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("af88e02a-6962-4b08-a7db-6d15ed16c43b")]
+            public class TxtField_LastNameInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// TxtField_LastNameInfoClass class constructor.
+                /// </summary>
+                public TxtField_LastNameInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "TxtField_LastName", ".//?//input[@placeholder='Last Name']", 30000, null, "af88e02a-6962-4b08-a7db-6d15ed16c43b")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("7ae88182-f0fb-4a3e-8e4e-8f5bccb57c92")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("7ae88182-f0fb-4a3e-8e4e-8f5bccb57c92");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("7ae88182-f0fb-4a3e-8e4e-8f5bccb57c92")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("7ae88182-f0fb-4a3e-8e4e-8f5bccb57c92", cropRect);
                 }
             }
 
             /// <summary>
-            /// The Copy_of_TxtField_FirstName item.
+            /// The Self item.
             /// </summary>
-            [RepositoryItem("d7168dc3-64eb-460c-8b10-0aa83f07bdf1")]
-            public virtual Ranorex.InputTag Copy_of_TxtField_FirstName
+            [RepositoryItem("c797f896-7830-4640-b4d8-fe906f0d49a1")]
+            public virtual Ranorex.DivTag Self
             {
                 get
                 {
-                    return _copy_of_txtfield_firstnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Copy_of_TxtField_FirstName item info.
+            /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("d7168dc3-64eb-460c-8b10-0aa83f07bdf1")]
-            public virtual RepoItemInfo Copy_of_TxtField_FirstNameInfo
+            [RepositoryItemInfo("c797f896-7830-4640-b4d8-fe906f0d49a1")]
+            public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
-                    return _copy_of_txtfield_firstnameInfo;
+                    return _selfInfo;
                 }
             }
 
             /// <summary>
-            /// The Copy_of_Copy_of_TxtField_FirstName item.
+            /// The Btn_AddNewAdult item.
             /// </summary>
-            [RepositoryItem("c293d548-7fca-452b-9716-2260c2cf83d5")]
-            public virtual Ranorex.InputTag Copy_of_Copy_of_TxtField_FirstName
+            [RepositoryItem("f9f2a086-804d-4e4e-9a8c-fbaadf4e92fc")]
+            public virtual Ranorex.ButtonTag Btn_AddNewAdult
             {
                 get
                 {
-                    return _copy_of_copy_of_txtfield_firstnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _btn_addnewadultInfo.CreateAdapter<Ranorex.ButtonTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Copy_of_Copy_of_TxtField_FirstName item info.
+            /// The Btn_AddNewAdult item info.
             /// </summary>
-            [RepositoryItemInfo("c293d548-7fca-452b-9716-2260c2cf83d5")]
-            public virtual RepoItemInfo Copy_of_Copy_of_TxtField_FirstNameInfo
+            [RepositoryItemInfo("f9f2a086-804d-4e4e-9a8c-fbaadf4e92fc")]
+            public virtual RepoItemInfo Btn_AddNewAdultInfo
             {
                 get
                 {
-                    return _copy_of_copy_of_txtfield_firstnameInfo;
+                    return _btn_addnewadultInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TxtField_FirstName item.
+            /// </summary>
+            [RepositoryItem("41ce0521-1022-4a2f-99f3-31173411759e")]
+            public virtual Ranorex.InputTag TxtField_FirstName
+            {
+                get
+                {
+                    return _txtfield_firstnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TxtField_FirstName item info.
+            /// </summary>
+            [RepositoryItemInfo("41ce0521-1022-4a2f-99f3-31173411759e")]
+            public virtual RepoItemInfo TxtField_FirstNameInfo
+            {
+                get
+                {
+                    return _txtfield_firstnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TxtField_LastName item.
+            /// </summary>
+            [RepositoryItem("af88e02a-6962-4b08-a7db-6d15ed16c43b")]
+            public virtual Ranorex.InputTag TxtField_LastName
+            {
+                get
+                {
+                    return _txtfield_lastnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TxtField_LastName item info.
+            /// </summary>
+            [RepositoryItemInfo("af88e02a-6962-4b08-a7db-6d15ed16c43b")]
+            public virtual TxtField_LastNameInfoClass TxtField_LastNameInfo
+            {
+                get
+                {
+                    return _txtfield_lastnameInfo;
                 }
             }
         }

@@ -210,6 +210,41 @@ name="MakeMyTripRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='www.makemytrip.com']//div[#'root']//button/span[@innertext='VIEW PRICES']
 				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="42e92f8b-a569-409a-86a0-b5fae6cb0891"
+				name="Txt_FirstName"
+				refimgid="43d8dfdb-33ed-4e10-a0e7-fa5e61201997"
+				refpath="/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']/div[4]/div[3]/div[2]/div/div/div[1]/div[1]/div/input[@type='text']"
+				robustPath="/dom[@domain='www.makemytrip.com']//div[#'root']/div[1]/div/input[@type='text']"
+				searchtimeout="30000ms">
+					<image
+					guid="40ca5642-beee-4017-aca9-7715a21a6742"
+					name="Screenshot1">
+						iVBORw0KGgoAAAANSUhEUgAAAPQAAAArCAYAAABPR6UEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAA/lJREFUeF7tmEtyKiEUQN101mA20ZVdWG4i9sShc8uBzpzogMe90PJp
+JJ28lOmmzqmingJ9ufA40GZlLNfr1RwOB9P3vfn8/KRQKAsp4qy4Kw4LK/mw3+/N+Xw2t9tNKwFg
+GYiz4q44LC6vxO7L5eKbAWCJiMPi8kqu7Pv97qsBYImIw+LySt7DAWD5iMsIDdAICA3QEAgN0BAI
+DdAQCA3QEAgN0BAIDdAQCA3QEAgN0BAIDdAQCA3QEAgN0BDfF7rvzNvb27i8b83JNp82a/t9bbZH
+1/3bHLem20ikCrbP+jF2Z3a+usSUfHYfcZyd6STux/Oo2v9pu3u+6903Hb8Sq8zJbN+fjeHahvgA
+MT8U+rlETqC6ZDXk+XVVaBEmCKrj+cOkhMunIuDjcPA5H218K0wth5cJHcUJIDQ859eF/l9ElqrQ
+KmA2/vFUF/qjSySL0fFs+yhmhVcJ3dm8xm8XCA3P+X2hpf1xY/rbtA+vyG4jhhtIi/bP6mwpi50K
+8xWDUPpvfpMPc0kOiYIw2m/Iyx4OmdAq+NCeHR5joV3+Q//yHEMOGjvJO8+vtJa+xY8d8pM5pv3T
+dZySG8yZFwhtN0cm0kgu+5q787eQ3phfbCR9fuLv9CCU28ghdvS9JrR/JQ8b38/JS+pyidbDyz/0
+D+ML7tk8h1QqIa53n0OM9BmJH69XvH4utyyXeC7J/+XU3GDO/FDocIq7EslVEDrfFCMJIupCh83t
+YqS/pUvPab9BhngDx3lWhE6e9+iNp3WlTZ/OeTR+drhpXRZ/FNcfKm5+ddHi8fRzPF48f0Hj+jWc
+nBvMmZfc0MXNp3HcgRCLWBM636D6XTekbPLyjZ0I5WVYb7ZpXhWhg7yBUFea33OhXb5uzknJRcpy
+UHS9hrmmbaO48XgThZ6eG8yZvxP6QdqnJnRJrsdGfLLxtD1+xt92Sf8XCZ2uTY2C0BY3V/smUskv
+Hk8/x+NVhJ6eG8yZvxG6t7+Z/UfXJ9yuNaHd2OlN7Da53dRZ/UAilOe06dK+FaFHYw4Hgo+pQkUi
+DPkUhS6ux8mcRnmXhR7qQ/y8n2//idCTc4M58ydC7+xGG/7qLSURWOP7tkxEJW6P+jzEzp4pCT2i
+JrTlEVuKnZvkH2IGyaSsN7vk+fH4bk0e8axQ8kzKOIdAtqbJelg57WGVrMlkoYUpucGc+b7QADBb
+EBqgIRAaoCEQGqAhEBqgIRAaoCEQGqAhEBqgIRAaoCEQGqAhEBqgIRAaoCFU6L7vzf1+91UAsETE
+YXF5dTgczOVy8dUAsETEYXF5db1ezX6/N+fzmZsaYGHcbjd1VxwWl1dSKR/Ebrmy5T2cQqEso4iz
+4q44bIwx/wBS77RcnjLXggAAAABJRU5ErkJggg==
+					</image>
+					/dom[@domain='www.makemytrip.com']//div[#'root']//input[@type='text']
+				</item>
 				<basepath>
 					/dom[@domain='www.makemytrip.com']//div[#'root']
 				</basepath>
@@ -272,82 +307,88 @@ name="MakeMyTripRepository">
 					/dom[@domain='www.makemytrip.com']//div[#'root']/?//span[@innertext&gt;' I will book without trip']
 				</item>
 				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="91f83c43-45db-408a-826e-257505ef7dc5"
-				name="TxtField_FirstName"
-				refimgid="a7009b7f-b885-4389-a92a-f6477bab0538"
-				robustPath="/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']/div[4]/div[3]/div[2]/div/div/div[1]/div[1]/div/input[@type='text']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.makemytrip.com']//div[#'root']/?/input[@placeholder='First &amp; Middle Name']
-				</item>
-				<item
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="f1b45b9c-8d33-4458-8d0b-664a6dc2bce6"
 				name="Btn_Gender"
 				refimgid="b89c5b7a-6c0c-4a2f-9e5a-9e4565957755"
-				refpath="/dom[@domain='www.makemytrip.com' and @caption='MakeMyTrip' and @page='']//div[#'wrapper_ADULT']/div[4]/div[2]/div[2]/div/div/div[1]/div[3]/div/div/label[1]/span[@innertext='MALE']"
-				robustPath="/dom[@domain='www.makemytrip.com']//div[#'root']"
+				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain='www.makemytrip.com']//div[#'root']//span[@innertext='MALE']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="spantag"
-				id="f2cd6dc6-fcd1-4a44-a570-61768fcc7f3d"
-				name="Chkbox_Adult1"
-				refimgid="49d49bd9-f8bf-4294-b89a-a4a9c704a2cd"
-				robustPath="/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']//span[@innertext='ADULT  1']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.makemytrip.com']//div[#'root']/?//span[@innertext='ADULT  1']
+					/dom[@domain='www.makemytrip.com']//div[#'root']//span[@innertext=$Gender]
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
-				id="d7168dc3-64eb-460c-8b10-0aa83f07bdf1"
-				name="Copy_of_TxtField_FirstName"
-				refimgid="a7009b7f-b885-4389-a92a-f6477bab0538"
-				robustPath="/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']//input[@type='text']"
+				id="31d443d0-1002-4f01-9b55-37dbccfb96b0"
+				name="Chkbox_Adult"
+				refimgid="de6d7317-add2-47d3-b1b8-0646a8ac4902"
+				robustPath=""
 				searchtimeout="30000ms">
-					/dom[@domain='www.makemytrip.com']//div[#'root']/?//?//div[@id='wrapper_ADULT']/?/input[@type='text' and @placeholder='First &amp; Middle Name']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="c293d548-7fca-452b-9716-2260c2cf83d5"
-				name="Copy_of_Copy_of_TxtField_FirstName"
-				refimgid="a7009b7f-b885-4389-a92a-f6477bab0538"
-				robustPath="/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']//input[@type='text']"
-				searchtimeout="30000ms">
-					/dom[@domain='www.makemytrip.com']//div[#'root']/?//?//div[@id='wrapper_ADULT']/?/input[@type='text' and @placeholder='First &amp; Middle Name']
+					/dom[@domain='www.makemytrip.com']//div[#'root']//?//div[@id='wrapper_ADULT']//?//input[@type='checkbox' and @checked='True']
 				</item>
 				<basepath>
 					/dom[@domain='www.makemytrip.com']//div[#'root']
 				</basepath>
 			</folder>
-			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="f9f2a086-804d-4e4e-9a8c-fbaadf4e92fc"
-			name="ButtonTagPlusADDNEWADULT"
-			refimgid="8d6ba311-a5e1-434e-81c2-69983b04915c"
-			refpath="/dom[@domain='www.makemytrip.com' and @caption='MakeMyTrip' and @page='']//div[#'wrapper_ADULT']/div[4]/div[3]/button[@innertext='+ ADD NEW ADULT']"
-			robustPath="/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']//button[@innertext='+ ADD NEW ADULT']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']//button[@innertext='+ ADD NEW ADULT']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="af88e02a-6962-4b08-a7db-6d15ed16c43b"
-			name="Text"
-			refimgid="e430acbb-e5ca-48f7-a7c9-0b484bc203c3"
-			refpath="/dom[@domain='www.makemytrip.com' and @caption='MakeMyTrip' and @page='']//div[#'wrapper_ADULT']/div[4]/div[2]/div[2]/div/div/div[1]/div[2]/div/input[@type='text']"
-			robustPath="/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']/div[4]/div[2]/div[2]/div/div/div[1]/div[2]/div/input[@type='text']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']/div[4]/div[2]/div[2]/div/div/div[1]/div[2]/div/input[@type='text']
-			</item>
+			<folder
+			capname="divtag"
+			id="c797f896-7830-4640-b4d8-fe906f0d49a1"
+			isrooted="True"
+			name="TravellerDetails"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="f9f2a086-804d-4e4e-9a8c-fbaadf4e92fc"
+				name="Btn_AddNewAdult"
+				refimgid="8d6ba311-a5e1-434e-81c2-69983b04915c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']//button[@class='addTravellerBtn']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="41ce0521-1022-4a2f-99f3-31173411759e"
+				name="TxtField_FirstName"
+				refimgid="e430acbb-e5ca-48f7-a7c9-0b484bc203c3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']//?//input[@placeholder='First &amp; Middle Name']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="af88e02a-6962-4b08-a7db-6d15ed16c43b"
+				name="TxtField_LastName"
+				refimgid="e430acbb-e5ca-48f7-a7c9-0b484bc203c3"
+				robustPath=""
+				searchtimeout="30000ms">
+					<image
+					guid="7ae88182-f0fb-4a3e-8e4e-8f5bccb57c92"
+					name="Screenshot1">
+						iVBORw0KGgoAAAANSUhEUgAAAPQAAAArCAYAAABPR6UEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAArVJREFUeF7t2DGOozAARmEuzRkyl4hyiyiXSGgo6aMU0NFA4fVvDDFO
+sjvDsBJY75MsBUyAKR54khmrbVtTVZUpisJcr1cGg7GToWbVrhqWTB/KsjR1XZuu69xOAPugZtWu
+GlbLmepumsZPA9gjNayWM72y+773uwHskRpWy5nW4QD2Ty0TNJAIggYSQtBAQggaSAhBAwkhaCAh
+BA0khKCBhBA0kBCCBhJC0EBCCBpIyIKgb+aY5+ZY+M1V2HOebv5z7GEuX7nJ384Pc+veC7Bf2wi6
+OH4IVnzQb69J0EBoE0E/zod/Bn082ejzg7nc/W6HoIHQ+kHrbWvnxxEedzs99+f50Z4p3mfHS9jP
+aN2xXxe7ZxQHPWxP5wqPvV/MQdcM7k/fcw+T8fjo2rN7m10X2KaVg9bcEKozRqTPLqRgzn66+XN8
+6w3tjvXBTsfOg9Z5Dudndgpy2nb3Enw33nb3/jxX/PD4+z0C27D+G3pGx/plsgs6XjIPvh+05UMc
+Qo3mIrPzuu+F14//juFcw3mD+55oX/hAArbnPwQ9zE9L1TCM8a2oEQT8o6Bleji8zrlzhddfEnR4
+n7MRRw5sy7pBv43mXQTh23BB0NYQrl1iB3NumfzpQfHrNzSwfesGrTdn+ONRuMy+2/+Zp0DmkS4J
+etyvN+cwFx/n5xcF/fpwkIddEQBbtjjol+WoC/kZmRuni90eInrYuGfL2DCWcIn78mtyHGooitI9
+QMZr2Oue7fbCoGX2K7cdB3tvnx47wBYsCBrAVhE0kBCCBhJC0EBCCBpICEEDCSFoICEEDSSEoIGE
+EDSQEIIGEkLQQEJc0EVRmL7v/S4Ae6SG1XJWVZVpmsbvBrBHalgtZ23bmrIsTV3XvKmBnem6zrWr
+htVypp36oLr1ytY6nMFg7GOoWbWrho0x5g+tQOBwH+amswAAAABJRU5ErkJggg==
+					</image>
+					/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']//?//input[@placeholder='Last Name']
+				</item>
+				<basepath>
+					/dom[@domain='www.makemytrip.com']//div[#'wrapper_ADULT']
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='www.makemytrip.com']
 			</basepath>
@@ -375,6 +416,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="a6e15f58-6f46-4bb7-b7e0-5de8b65baa27"
 		name="date">
 			Sat Nov 08 202
+		</var>
+		<var
+		id="d162fbba-89be-4ffc-b1c0-23e8a69110cd"
+		name="Gender">
+			MALE
 		</var>
 	</variables>
 </repository>

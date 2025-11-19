@@ -41,6 +41,8 @@ namespace MakeMyTrip.BookingPage
         /// </summary>
         public EnterTravellerDetails()
         {
+            FirstName = "Jagadeesh";
+            LastName = "";
         }
 
         /// <summary>
@@ -52,6 +54,40 @@ namespace MakeMyTrip.BookingPage
         }
 
 #region Variables
+
+        string _FirstName;
+
+        /// <summary>
+        /// Gets or sets the value of variable FirstName.
+        /// </summary>
+        [TestVariable("e79a8bf7-094d-474d-b13c-31b7d39a1375")]
+        public string FirstName
+        {
+            get { return _FirstName; }
+            set { _FirstName = value; }
+        }
+
+        string _LastName;
+
+        /// <summary>
+        /// Gets or sets the value of variable LastName.
+        /// </summary>
+        [TestVariable("57dcb3f0-5484-4cd5-bbae-0ef535fd5521")]
+        public string LastName
+        {
+            get { return _LastName; }
+            set { _LastName = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Gender.
+        /// </summary>
+        [TestVariable("d162fbba-89be-4ffc-b1c0-23e8a69110cd")]
+        public string Gender
+        {
+            get { return repo.Gender; }
+            set { repo.Gender = value; }
+        }
 
 #endregion
 
@@ -79,28 +115,32 @@ namespace MakeMyTrip.BookingPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.ButtonTagPlusADDNEWADULT' at 46;9.", repo.MakeMyTrip.ButtonTagPlusADDNEWADULTInfo, new RecordItemIndex(0));
-            repo.MakeMyTrip.ButtonTagPlusADDNEWADULT.Click("46;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.TravellerDetails.Btn_AddNewAdult' at Center.", repo.MakeMyTrip.TravellerDetails.Btn_AddNewAdultInfo, new RecordItemIndex(0));
+            repo.MakeMyTrip.TravellerDetails.Btn_AddNewAdult.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.TxtField_FirstName' at 97;25.", repo.MakeMyTrip.BookingPage.TxtField_FirstNameInfo, new RecordItemIndex(1));
-            repo.MakeMyTrip.BookingPage.TxtField_FirstName.Click("97;25");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.TravellerDetails.TxtField_FirstName' at Center.", repo.MakeMyTrip.TravellerDetails.TxtField_FirstNameInfo, new RecordItemIndex(1));
+            repo.MakeMyTrip.TravellerDetails.TxtField_FirstName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.Text' at 107;22.", repo.MakeMyTrip.TextInfo, new RecordItemIndex(2));
-            repo.MakeMyTrip.Text.Click("107;22");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FirstName' with focus on 'MakeMyTrip.TravellerDetails.TxtField_FirstName'.", repo.MakeMyTrip.TravellerDetails.TxtField_FirstNameInfo, new RecordItemIndex(2));
+            repo.MakeMyTrip.TravellerDetails.TxtField_FirstName.PressKeys(FirstName);
+            Delay.Milliseconds(20);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.TravellerDetails.TxtField_LastName' at Center.", repo.MakeMyTrip.TravellerDetails.TxtField_LastNameInfo, new RecordItemIndex(3));
+            repo.MakeMyTrip.TravellerDetails.TxtField_LastName.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Btn_Gender' at 106;28.", repo.MakeMyTrip.BookingPage.Btn_GenderInfo, new RecordItemIndex(3));
-            repo.MakeMyTrip.BookingPage.Btn_Gender.Click("106;28");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$LastName' with focus on 'MakeMyTrip.TravellerDetails.TxtField_LastName'.", repo.MakeMyTrip.TravellerDetails.TxtField_LastNameInfo, new RecordItemIndex(4));
+            repo.MakeMyTrip.TravellerDetails.TxtField_LastName.PressKeys(LastName);
+            Delay.Milliseconds(20);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Btn_Gender' at Center.", repo.MakeMyTrip.BookingPage.Btn_GenderInfo, new RecordItemIndex(5));
+            repo.MakeMyTrip.BookingPage.Btn_Gender.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Chkbox_Adult1' at 1;12.", repo.MakeMyTrip.BookingPage.Chkbox_Adult1Info, new RecordItemIndex(4));
-            repo.MakeMyTrip.BookingPage.Chkbox_Adult1.Click("1;12");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.ButtonTagPlusADDNEWADULT' at 68;5.", repo.MakeMyTrip.ButtonTagPlusADDNEWADULTInfo, new RecordItemIndex(5));
-            repo.MakeMyTrip.ButtonTagPlusADDNEWADULT.Click("68;5");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MakeMyTrip.BookingPage.Chkbox_Adult' at Center.", repo.MakeMyTrip.BookingPage.Chkbox_AdultInfo, new RecordItemIndex(6));
+            repo.MakeMyTrip.BookingPage.Chkbox_Adult.Click();
             Delay.Milliseconds(0);
             
         }

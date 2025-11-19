@@ -150,6 +150,18 @@
       <UserCode>true</UserCode>
       <id>b49724be-1740-4708-b7a1-be0fd0bd9078</id>
     </Compile>
+    <Compile Include="BookingPage\Test.cs">
+      <BoundTo>23898157-17b3-4146-b52c-2d32024f1a72</BoundTo>
+      <DependentUpon>Test.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f3d7bd5-6413-4f7a-a89b-0c0217d079cc</id>
+    </Compile>
+    <Compile Include="BookingPage\Test.UserCode.cs">
+      <BoundTo>23898157-17b3-4146-b52c-2d32024f1a72</BoundTo>
+      <DependentUpon>Test.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e0412bc1-b5a7-4f8d-ad09-6f5a1e8649cf</id>
+    </Compile>
     <Compile Include="CodeModules\ValidatePrices.cs">
       <id>169c39ca-d8ea-43bd-aa06-f972c54bf865</id>
     </Compile>
@@ -320,6 +332,11 @@
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
       <id>872294d5-80f3-48ae-a9d6-dfe8b08a1c0a</id>
       <recordtableid>ff9b8d11-54a3-4b79-8f35-47e1d19c56e4</recordtableid>
+    </None>
+    <None Include="BookingPage\Test.rxrec">
+      <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>
+      <id>23898157-17b3-4146-b52c-2d32024f1a72</id>
+      <recordtableid>851e0f35-3281-48ce-9d94-7bccb13e9cc9</recordtableid>
     </None>
     <None Include="FlightsList\clickOk.rxrec">
       <BoundTo>bbdd772f-9b52-465c-ba86-b06b33dfe277</BoundTo>

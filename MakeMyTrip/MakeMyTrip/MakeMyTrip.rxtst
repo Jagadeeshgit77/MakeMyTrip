@@ -86,6 +86,7 @@
 			type="Recording">
 			</testmodule>
 			<testcase
+			datasource="NewConnector"
 			id="68d0b179-4c96-46dc-aaeb-a044aa96ff33"
 			name="TC06_Update_Traveller_details">
 			</testcase>
@@ -132,6 +133,32 @@
 			id="c1cfe7f6-d643-4c9f-aa3c-eebe79857068"
 			name="TC04_Click_on_View_Prices_button_and_navigate_to_booking_page">
 			</testcase>
+			<testmodule
+			id="d54f0b58-75b6-4ba6-bea7-2b8ed9db7281"
+			name="EnterTravellerDetails"
+			ref="ff9b8d11-54a3-4b79-8f35-47e1d19c56e4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="FirstName"
+					datasourceid="5ee644cb-df78-4f67-a397-9abcc539c31b"
+					variableid="e79a8bf7-094d-474d-b13c-31b7d39a1375"
+					variablename="FirstName">
+					</var>
+					<var
+					dataname="LastName"
+					datasourceid="5ee644cb-df78-4f67-a397-9abcc539c31b"
+					variableid="57dcb3f0-5484-4cd5-bbae-0ef535fd5521"
+					variablename="LastName">
+					</var>
+					<var
+					dataname="Gender"
+					datasourceid="5ee644cb-df78-4f67-a397-9abcc539c31b"
+					variableid="d162fbba-89be-4ffc-b1c0-23e8a69110cd"
+					variablename="Gender">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="eed06f52-12d8-46e6-88cc-a30ed6802031"
 			name="TC05_Apply_Coupon_and_Verify_total_price">
@@ -216,6 +243,10 @@
 					<testcase
 					id="68d0b179-4c96-46dc-aaeb-a044aa96ff33"
 					name="TC06_Update_Traveller_details">
+						<testmodule
+						id="d54f0b58-75b6-4ba6-bea7-2b8ed9db7281"
+						name="EnterTravellerDetails">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="8ff67c3d-c8b5-4249-b224-dbaa07eb5135"
@@ -230,6 +261,49 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="5ee644cb-df78-4f67-a397-9abcc539c31b"
+		lastknownrowcount="1"
+		name="NewConnector"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					FirstName
+				</column>
+				<column>
+					LastName
+				</column>
+				<column>
+					Gender
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						FirstName
+					</th>
+					<th>
+						LastName
+					</th>
+					<th>
+						Gender
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Jagadeesh
+					</td>
+					<td>
+						Palavalasa
+					</td>
+					<td>
+						MALE
+					</td>
+				</tr>
+			</table>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
